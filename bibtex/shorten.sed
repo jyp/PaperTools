@@ -40,16 +40,17 @@ s/Mathematical Foundations of Programming Semantics/MFPS/
 s/the International Conference on Typed Lambda Calculi and Applications/TLCA/
 
 
-s/IEEE Computer Society/IEEE/
+s/Fundamenta Informaticae/Fundam. Inf./
 s/Lecture Notes in Computer Science/LNCS/
+s/IEEE Computer Society/IEEE/
 s/Symbolic Computation/Symbol. Comp./
-s/Journal of Functional Programming/J. Funct. Program./
 s/Functional/Funct./
+s/Journal of Functional Programming/J. Funct. Program./
 s/Journal/J./
 s/Proceedings/Proc./
+s/Programming/Prog./
 s/Computer/Comp./
 s/Computing/Comp./
 s/Science/Sci./
 s/Theoretical/Theor./
-s/Fundamenta Informaticae/Fundam. Inf./
-
+s/Conference/Conf./
