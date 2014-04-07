@@ -8,6 +8,7 @@
 s/the conference on Functional programming languages and computer architecture/FPCA/
 s/the 5th {ACM} conference on Functional programming languages and computer architecture/FPCA 1991/
 s/the fourth international conference on Functional programming languages and computer architecture/FPCA 1989/
+s/the seventh {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2002/
 s/the eighth {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2003/
 s/the 13th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2008/
 s/the 14th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2009/
