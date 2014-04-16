@@ -15,6 +15,8 @@ s/the 14th {ACM} {SIGPLAN} international conference on Functional programming/IC
 s/the 15th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2010/
 s/the 16th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2011/
 s/the 17th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2012/
+s/the 18th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2013/
+  
 
 s/{POPL} '89: Proceedings of the 16th {ACM} {SIGPLAN-SIGACT} symposium on Principles of programming languages/POPL'89/
 s/POPL '89: Proceedings of the 16th ACM SIGPLAN-SIGACT symposium on Principles of programming languages/POPL'89/
