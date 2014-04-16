@@ -8,15 +8,15 @@
 s/the conference on Functional programming languages and computer architecture/FPCA/
 s/the 5th {ACM} conference on Functional programming languages and computer architecture/FPCA 1991/
 s/the fourth international conference on Functional programming languages and computer architecture/FPCA 1989/
-s/the seventh {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2002/
-s/the eighth {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2003/
-s/the 13th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2008/
-s/the 14th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2009/
-s/the 15th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2010/
-s/the 16th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2011/
-s/the 17th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2012/
-s/the 18th {ACM} {SIGPLAN} international conference on Functional programming/ICFP 2013/
-  
+s/the seventh {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2002/
+s/the eighth {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2003/
+s/the 13th {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2008/
+s/the 14th {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2009/
+s/the 15th {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2010/
+s/the 16th {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2011/
+s/the 17th {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2012/
+s/the 18th {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2013/
+s/the 19th {ACM} {SIGPLAN} international conference on Functional Programming/ICFP 2014/
 
 s/{POPL} '89: Proceedings of the 16th {ACM} {SIGPLAN-SIGACT} symposium on Principles of programming languages/POPL'89/
 s/POPL '89: Proceedings of the 16th ACM SIGPLAN-SIGACT symposium on Principles of programming languages/POPL'89/
