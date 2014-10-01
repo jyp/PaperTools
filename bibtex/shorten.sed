@@ -57,3 +57,5 @@ s/Computing/Comp./
 s/Science/Sci./
 s/Theoretical/Theor./
 s/Conference/Conf./
+s/Technology/Tech./
+s/Software/Soft./
