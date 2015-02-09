@@ -615,15 +615,12 @@
     \else  \AB@authors\fi\fi}
 \newcommand*\Copyright[2][]{%
   \def\@Copyright{%
-    \def\@tempa{#1}\ifx\@tempa\@empty
-      \ifx#2\@empty \else \textcopyright\ #2\\\fi
-    \else
-      \setbox\@tempboxa\hbox{\includegraphics[height=14\p@,clip]{cc-by-#1}}%
+      \setbox\@tempboxa\hbox{\includegraphics[height=14\p@,clip]{cc-by#1}}%
       \hspace*{\wd\@tempboxa}\enskip\ifx#2\@empty \else \textcopyright\ #2;\\\fi
-      \href{http://creativecommons.org/licenses/by-#1/3.0/}%
+      \href{http://creativecommons.org/licenses/by#1/3.0/}%
            {\smash{\unhbox\@tempboxa}}\enskip
-            licensed under Creative Commons License \MakeUppercase{#1}\\
-    \fi}}
+            licensed under Creative Commons License \MakeUppercase{CC-BY#1}\\
+    }}
 \Copyright[]{\@empty}
 \def\keywords#1{\def\@keywords{#1}}
 \let\@keywords\@empty
