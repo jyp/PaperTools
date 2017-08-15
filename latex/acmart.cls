@@ -37,7 +37,7 @@
 %%   Right brace   \}     Tilde         \~}
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{acmart}
-[2017/07/09 v1.43 Typesetting articles for Association of
+[2017/08/12 v1.44 Typesetting articles for Association of
 Computing Machinery]
 \def\@classname{acmart}
 \InputIfFileExists{acmart-preload-hook.tex}{%
@@ -71,6 +71,14 @@ Computing Machinery]
   \fi}{\PackageError{\@classname}{Option screen can be either true or
     false}}
 \ExecuteOptionsX{screen=false}
+\define@boolkey+{acmart.cls}[@ACM@]{acmthm}[true]{%
+  \if@ACM@acmthm
+    \PackageInfo{\@classname}{Requiring acmthm}%
+  \else
+    \PackageInfo{\@classname}{Suppressing acmthm}%
+  \fi}{\PackageError{\@classname}{Option acmthm can be either true or
+    false}}
+\ExecuteOptionsX{acmthm=true}
 \define@boolkey+{acmart.cls}[@ACM@]{review}[true]{%
   \if@ACM@review
     \PackageInfo{\@classname}{Using review mode}%
@@ -190,6 +198,7 @@ Computing Machinery]
 \ClassInfo{\@classname}{Using fontsize \ACM@fontsize}
 \LoadClass[\ACM@fontsize, reqno]{amsart}
 \RequirePackage{microtype}
+\RequirePackage{refcount}
 \RequirePackage{totpages}
 \RequirePackage{environ}
 \if@ACM@manuscript
@@ -431,7 +440,6 @@ Computing Machinery]
 \else
   \hypersetup{hidelinks}
 \fi
-\RequirePackage{cleveref}
 \if@ACM@natbib
   \let\citeN\cite
   \let\cite\citep
@@ -1029,6 +1037,18 @@ Computing Machinery]
   \fi}
 \acmConference[Conference'17]{ACM Conference}{July 2017}{Washington,
   DC, USA}
+\def\acmBooktitle#1{\gdef\@acmBooktitle{#1}}
+\acmBooktitle{Proceedings of \acmConference@name
+       \ifx\acmConference@name\acmConference@shortname\else
+         \ (\acmConference@shortname)\fi}
+\def\@editorsAbbrev{(Ed.)}
+\def\@acmEditors{}
+\def\editor#1{\ifx\@acmEditors\@empty
+    \gdef\@acmEditors{#1}%
+  \else
+    \gdef\@editorsAbbrev{(Eds.)}%
+    \g@addto@macro\@acmEditors{\and#1}%
+\fi}
 \def\subtitle#1{\def\@subtitle{#1}}
 \subtitle{}
 \newcount\num@authorgroups
@@ -1135,7 +1155,7 @@ Computing Machinery]
 \def\acmNumber#1{\def\@acmNumber{#1}}
 \acmNumber{1}
 \def\acmArticle#1{\def\@acmArticle{#1}}
-\acmArticle{1}
+\acmArticle{}
 \def\acmArticleSeq#1{\def\@acmArticleSeq{#1}}
 \acmArticleSeq{\@acmArticle}
 \def\acmYear#1{\def\@acmYear{#1}}
@@ -1529,7 +1549,7 @@ Computing Machinery]
           \if@ACM@journal
             \emph{\@journalName}%
           \else
-            \emph{Proceedings of \acmConference@name, \acmConference@date}%
+            \emph{\@acmBooktitle}%
           \fi
           \ifx\@acmDOI\@empty
           .
@@ -1542,9 +1562,9 @@ Computing Machinery]
             \ifx\@acmPrice\@empty\else\ \$\@acmPrice\fi\\
             \@formatdoi{\@acmDOI}%
           \else % Conference
-             ACM~ISBN~\@acmISBN
-             \ifx\@acmPrice\@empty.\else\dots\$\@acmPrice\fi\\
-             \@formatdoi{\@acmDOI}%
+            \ifx\@acmISBN\@empty\else ACM~ISBN~\@acmISBN
+            \ifx\@acmPrice\@empty.\else\dots\$\@acmPrice\fi\\\fi
+            \ifx\@acmDOI\@empty\else\@formatdoi{\@acmDOI}\fi%
           \fi
         \fi
       \fi}
@@ -2010,23 +2030,27 @@ Computing Machinery]
    \ignorespaces\@abstract\par}%
   \fi\egroup}
 \def\@mkbibcitation{\bgroup
+  \def\@pages@word{\ifnum\getrefnumber{TotPages}=1\relax page\else pages\fi}%
   \def\footnotemark{}%
   \def\\{\unskip{} \ignorespaces}%
   \def\footnote{\ClassError{\@classname}{Please do note use footnotes
       inside \string\title{} or \string\author{} command! Use
       \string\titlenote{} or \string\authornote{} instead!}}%
+  \def\@article@string{\ifx\@acmArticle\@empty{\ }\else,
+    Article~\@acmArticle\ \fi}%
   \par\medskip\small\noindent{\bfseries ACM Reference Format:}\par\nobreak
   \noindent\authors. \@acmYear. \@title.
   \if@ACM@journal
      \textit{\@journalNameShort}
-     \@acmVolume, \@acmNumber, Article~\@acmArticle\ (\@acmPubDate),
-     \ref{TotPages}~pages.
+     \@acmVolume, \@acmNumber \@article@string (\@acmPubDate),
+     \ref{TotPages}~\@pages@word.
   \else
-     In \textit{Proceedings of \acmConference@name, \acmConference@venue,
-       \acmConference@date
-       \ifx\acmConference@name\acmConference@shortname\else
-         \ (\acmConference@shortname)\fi
-         ,} \ref{TotPages}~pages.
+     In \textit{\@acmBooktitle}%
+     \ifx\@acmEditors\@empty\textit{.}\else
+       \andify\@acmEditors\textit{, }\@acmEditors~\@editorsAbbrev.%
+     \fi\
+     ACM, New York, NY, USA%
+       \@article@string\unskip, \ref{TotPages}~\@pages@word.
   \fi\par
   \noindent\@formatdoi{\@acmDOI}
 \par\egroup}
@@ -2191,7 +2215,8 @@ Computing Machinery]
   \@folio@voffset=.55in\relax
   \def\@folio@max{10}
 \fi
-\def\@folioblob{\@tempcnta=\@acmArticleSeq\relax
+\def\@folioblob{\@tempcnta=0\@acmArticleSeq\relax
+  \ifnum\@tempcnta=0\relax\else
   \loop
      \ifnum\@tempcnta>\@folio@max\relax
       \advance\@tempcnta by - \@folio@max
@@ -2208,7 +2233,7 @@ Computing Machinery]
         \parbox{\@folio@wd}{%
           \centering
           \textcolor{white}{\LARGE\bfseries\sffamily\@acmArticle}}}}
-  \end{picture}}
+  \end{picture}\fi}
 
 \fancypagestyle{firstpagestyle}{%
   \fancyhf{}%
@@ -2255,6 +2280,14 @@ Computing Machinery]
     \fi
   \fi
 }
+\let\ACM@ps@plain\ps@plain
+\let\ACM@ps@myheadings\ps@myheadings
+\let\ACM@ps@headings\ps@headings
+\def\ACM@restore@pagestyle{%
+  \let\ps@plain\ACM@ps@plain
+  \let\ps@myheadings\ACM@ps@myheadings
+  \let\ps@headings\ACM@ps@headings}
+\AtBeginDocument{\ACM@restore@pagestyle}
 \renewcommand\section{\@startsection{section}{1}{\z@}%
   {-.75\baselineskip \@plus -2\p@ \@minus -.2\p@}%
   {.25\baselineskip}%
@@ -2329,100 +2362,9 @@ Computing Machinery]
 \def\@adddotafter#1{#1\@addpunct{.}}
 \def\@addspaceafter#1{#1\@addpunct{\enspace}}
 \providecommand*\@dotsep{4.5}
-\def\@acmplainbodyfont{\itshape}
-\def\@acmplainindent{\parindent}
-\def\@acmplainheadfont{\scshape}
-\def\@acmplainnotefont{\@empty}
-\ifcase\ACM@format@nr
-\relax % manuscript
-\or % acmsmall
-\or % acmlarge
-\or % acmtog
-\or % sigconf
-\or % siggraph
-\or % sigplan
-  \def\@acmplainbodyfont{\itshape}
-  \def\@acmplainindent{\z@}
-  \def\@acmplainheadfont{\bfseries}
-  \def\@acmplainnotefont{\normalfont}
-\or % sigchi
-\or % sigchi-a
+\if@ACM@acmthm
+  \RequirePackage{acmthm}
 \fi
-\newtheoremstyle{acmplain}%
-  {.5\baselineskip\@plus.2\baselineskip
-    \@minus.2\baselineskip}% space above
-  {.5\baselineskip\@plus.2\baselineskip
-    \@minus.2\baselineskip}% space below
-  {\@acmplainbodyfont}% body font
-  {\@acmplainindent}% indent amount
-  {\@acmplainheadfont}% head font
-  {.}% punctuation after head
-  {.5em}% spacing after head
-  {\thmname{#1}\thmnumber{ #2}\thmnote{ {\@acmplainnotefont(#3)}}}% head spec
-\def\@acmdefinitionbodyfont{\normalfont}
-\def\@acmdefinitionindent{\parindent}
-\def\@acmdefinitionheadfont{\itshape}
-\def\@acmdefinitionnotefont{\@empty}
-\ifcase\ACM@format@nr
-\relax % manuscript
-\or % acmsmall
-\or % acmlarge
-\or % acmtog
-\or % sigconf
-\or % siggraph
-\or % sigplan
-  \def\@acmdefinitionbodyfont{\normalfont}
-  \def\@acmdefinitionindent{\z@}
-  \def\@acmdefinitionheadfont{\bfseries}
-  \def\@acmdefinitionnotefont{\normalfont}
-\or % sigchi
-\or % sigchi-a
-\fi
-\newtheoremstyle{acmdefinition}%
-  {.5\baselineskip\@plus.2\baselineskip
-    \@minus.2\baselineskip}% space above
-  {.5\baselineskip\@plus.2\baselineskip
-    \@minus.2\baselineskip}% space below
-  {\@acmdefinitionbodyfont}% body font
-  {\@acmdefinitionindent}% indent amount
-  {\@acmdefinitionheadfont}% head font
-  {.}% punctuation after head
-  {.5em}% spacing after head
-  {\thmname{#1}\thmnumber{ #2}\thmnote{ {\@acmdefinitionnotefont(#3)}}}% head spec
-\theoremstyle{acmplain}
-\newtheorem{theorem}{Theorem}[section]
-\newtheorem{conjecture}[theorem]{Conjecture}
-\newtheorem{proposition}[theorem]{Proposition}
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\theoremstyle{acmdefinition}
-\newtheorem{example}[theorem]{Example}
-\newtheorem{definition}[theorem]{Definition}
-\theoremstyle{acmplain}
-\def\@proofnamefont{\scshape}
-\def\@proofindent{\indent}
-\ifcase\ACM@format@nr
-\relax % manuscript
-\or % acmsmall
-\or % acmlarge
-\or % acmtog
-\or % sigconf
-\or % siggraph
-\or % sigplan
-  \def\@proofnamefont{\itshape}
-  \def\@proofindent{\noindent}
-\or % sigchi
-\or % sigchi-a
-\fi
-\renewenvironment{proof}[1][\proofname]{\par
-  \pushQED{\qed}%
-  \normalfont \topsep6\p@\@plus6\p@\relax
-  \trivlist
-  \item[\@proofindent\hskip\labelsep
-        {\@proofnamefont #1\@addpunct{.}}]\ignorespaces
-}{%
-  \popQED\endtrivlist\@endpefalse
-}
 \specialcomment{acks}{%
   \begingroup
   \section*{Acknowledgments}
