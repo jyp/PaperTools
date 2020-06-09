@@ -348,17 +348,6 @@ of shapely types and refer to a forthcoming paper which applies this theory to d
 	bibsource = {dblp computer science bibliography, https://dblp.org}
 },
 
-@article{algehed_simple_2019,
-	author = {Maximilian Algehed and Jean-Philippe Bernardy},
-	title = {Simple noninterference from parametricity},
-	journal = {Proceedings of the ACM on Programming Languages},
-	volume = {3},
-	number = {ICFP},
-	pages = {89},
-	year = {2019},
-	publisher = {ACM}
-},
-
 @inproceedings{algehed_optimising_2019,
 	author = {Maximilian Algehed and Alejandro Russo and Cormac Flanagan},
 	title = {Optimising Faceted Secure Multi-Execution},
@@ -372,6 +361,17 @@ of shapely types and refer to a forthcoming paper which applies this theory to d
 	timestamp = {Wed, 16 Oct 2019 14:14:49 +0200},
 	biburl = {https://dblp.org/rec/bib/conf/csfw/AlgehedRF19},
 	bibsource = {dblp computer science bibliography, https://dblp.org}
+},
+
+@article{algehed_simple_2019,
+	author = {Maximilian Algehed and Jean-Philippe Bernardy},
+	title = {Simple noninterference from parametricity},
+	journal = {Proceedings of the ACM on Programming Languages},
+	volume = {3},
+	number = {ICFP},
+	pages = {89},
+	year = {2019},
+	publisher = {ACM}
 },
 
 @article{allison_lazy_1992,
@@ -597,14 +597,6 @@ of shapely types and refer to a forthcoming paper which applies this theory to d
 	keywords = {domain-specific languages, higher-order abstract syntax, type classes, unembedding}
 },
 
-@misc{atkey_relational_2010,
-	author = {Robert Atkey},
-	file = {:/home/bernardy/Papers/Relational Parametricity for Higher Kinds-2010.pdf:pdf},
-	booktitle = {Identities},
-	title = {{Relational Parametricity for Higher Kinds}},
-	year = {2010}
-},
-
 @inproceedings{atkey_when_2010,
 	author = {Robert Atkey and Patricia Johann and Neil Ghani},
 	title = {When is a Type Refinement an Inductive Type?},
@@ -615,6 +607,14 @@ of shapely types and refer to a forthcoming paper which applies this theory to d
 	pages = {72--87},
 	booktitle = {Foundations Of Software Science And Computational Structures},
 	publisher = {Springer}
+},
+
+@misc{atkey_relational_2010,
+	author = {Robert Atkey},
+	file = {:/home/bernardy/Papers/Relational Parametricity for Higher Kinds-2010.pdf:pdf},
+	booktitle = {Identities},
+	title = {{Relational Parametricity for Higher Kinds}},
+	year = {2010}
 },
 
 @inproceedings{atkey_relationally_2014,
@@ -817,7 +817,8 @@ of shapely types and refer to a forthcoming paper which applies this theory to d
 	title = {Dual intuitionistic linear logic},
 	journal = {LFCS Report Series-Laboratory for Foundations of Computer Science ECS LFCS},
 	year = {1996},
-	publisher = {University of Edinburgh, Department of Computer Science, Laboratory for Foundations of Computer Science}
+	publisher = {University of Edinburgh, Department of Computer Science, Laboratory for Foundations of Computer Science},
+	see = {:hyland_full_1993}
 },
 
 @article{barendregt_introduction_1991,
@@ -1000,7 +1001,8 @@ by a built-in extraction procedure that removes this static information. We also
 	author = {Luisa Bentivogli and Peter Clark and Ido Dagan and Danilo Giampiccolo},
 	title = {The Fifth {PASCAL} Recognizing Textual Entailment Challenge.},
 	booktitle = {TAC},
-	year = {2009}
+	year = {2009},
+	see = {:giampiccolo_fourth_2008}
 },
 
 @incollection{benton_term_1993,
@@ -1122,6 +1124,14 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {2009}
 },
 
+@misc{bernardy_proof_2010,
+	author = {Jean-Philippe Bernardy},
+	title = {A proof of the Abstraction theorem for pure type systems (unary case)},
+	url = {http://www.cse.chalmers.se/~bernardy/ParDep/html/Theorem.html},
+	year = {2010},
+	howpublished = {\url{http://www.cse.chalmers.se/~bernardy/ParDep/html/Theorem.html}}
+},
+
 @unpublished{bernardy_abstraction_2010,
 	author = {Jean-Philippe Bernardy and Patrik Jansson and Ross Paterson},
 	file = {:/home/bernardy/Papers/An abstraction theorem for pure type systems-2010.pdf:pdf},
@@ -1188,14 +1198,6 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {2010}
 },
 
-@misc{bernardy_proof_2010,
-	author = {Jean-Philippe Bernardy},
-	title = {A proof of the Abstraction theorem for pure type systems (unary case)},
-	url = {http://www.cse.chalmers.se/~bernardy/ParDep/html/Theorem.html},
-	year = {2010},
-	howpublished = {\url{http://www.cse.chalmers.se/~bernardy/ParDep/html/Theorem.html}}
-},
-
 @inproceedings{bernardy_testing_2010,
 	author = {Jean-Philippe Bernardy and Patrik Jansson and Koen Claessen},
 	affiliation = {Chalmers University of Technology},
@@ -1226,11 +1228,12 @@ by a built-in extraction procedure that removes this static information. We also
 	keywords = {Programvaruteknik}
 },
 
-@misc{bernardy_computational_2011,
-	author = {Jean-Philippe Bernardy and Guilhem Moulin},
-	title = {Towards a computational interpretation of parametricity},
-	year = {2011},
-	howpublished = {Submitted to PoPL 2011}
+@phdthesis{bernardy_theory_2011,
+	author = {Jean-Philippe Bernardy},
+	title = {A theory of parametric polymorphism and an application},
+	school = {Chalmers Tekniska Högskola},
+	type = {PhD Thesis},
+	year = {2011}
 },
 
 @inproceedings{bernardy_realizability_2011,
@@ -1243,14 +1246,6 @@ by a built-in extraction procedure that removes this static information. We also
 	pages = {108--122},
 	booktitle = {Foundations Of Software Science And Computational Structures},
 	publisher = {Springer}
-},
-
-@phdthesis{bernardy_theory_2011,
-	author = {Jean-Philippe Bernardy},
-	title = {A theory of parametric polymorphism and an application},
-	school = {Chalmers Tekniska Högskola},
-	type = {PhD Thesis},
-	year = {2011}
 },
 
 @inproceedings{bernardy_computational_2012,
@@ -1329,6 +1324,13 @@ by a built-in extraction procedure that removes this static information. We also
 	howpublished = {\HREF{Blog Entry}{http://www.cse.chalmers.se/~bernardy/prettiest.html}}
 },
 
+@inproceedings{bernardy_presheaf_2015,
+	author = {Jean-Philippe Bernardy and Thierry Coquand and Guilhem Moulin},
+	title = {A presheaf model of parametric type theory},
+	year = {2015},
+	booktitle = {MFPS}
+},
+
 @article{bernardy_certified_2015,
 	author = {Jean-Philippe Bernardy and Patrik Jansson},
 	title = {Certified Context-Free Parsing},
@@ -1351,13 +1353,6 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {2015}
 },
 
-@misc{bernardy_duality_2015,
-	author = {Jean-Philippe Bernardy and Josef Svenningsson},
-	title = {On the Duality of Streams},
-	note = {\HREF{Latest version available online}{https://github.com/jyp/organ/blob/master/Organ.lhs}},
-	year = {2015}
-},
-
 @article{bernardy_efficient_2015,
 	author = {Jean-Philippe Bernardy and Koen Claessen},
 	title = {Efficient Parallel and Incremental Parsing of Practical Context-Free Languages},
@@ -1370,11 +1365,11 @@ by a built-in extraction procedure that removes this static information. We also
 	COMMENTnote = {\HREF{preprint available online}{http://www.cse.chalmers.se/~bernardy/PP.pdf} }
 },
 
-@inproceedings{bernardy_presheaf_2015,
-	author = {Jean-Philippe Bernardy and Thierry Coquand and Guilhem Moulin},
-	title = {A presheaf model of parametric type theory},
-	year = {2015},
-	booktitle = {MFPS}
+@misc{bernardy_duality_2015,
+	author = {Jean-Philippe Bernardy and Josef Svenningsson},
+	title = {On the Duality of Streams},
+	note = {\HREF{Latest version available online}{https://github.com/jyp/organ/blob/master/Organ.lhs}},
+	year = {2015}
 },
 
 @inproceedings{bernardy_type-theoretical_2017,
@@ -1401,14 +1396,6 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {2017}
 },
 
-@inproceedings{bernardy_type-theoretical_2017,
-	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
-	title = {A Type-Theoretical system for the FraCaS test suite: Grammatical Framework meets Coq},
-	booktitle = {International Workshop on Computational Semantics},
-	pages = {tbd},
-	year = {2017}
-},
-
 @article{bernardy_using_2017,
 	author = {Jean-Philippe Bernardy and Shalom Lappin},
 	title = {Using Deep Neural Networks to Learn Syntactic Agreement},
@@ -1418,6 +1405,16 @@ by a built-in extraction procedure that removes this static information. We also
 	pages = {15},
 	year = {2017},
 	issn = {1945-3604}
+},
+
+@inproceedings{bernardy_compositional_2018,
+	author = {Jean-Philippe Bernardy and Rasmus Blanck and Stergios Chatzikyriakidis and Shalom Lappin},
+	Booktitle = {Proceedings of the International Workshop on Language, 
+                     Cognition and Computational Models, COLING 2018, Santa Fe, 
+                     New Mexico},
+	Title = {A Compositional {Bayesian} Semantics for Natural Language},
+	Pages = {1--11},
+	Year = {2018}
 },
 
 @article{bernardy_corpus_2018,
@@ -1436,28 +1433,13 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {2018}
 },
 
-@misc{bernardy_influence_2018,
-	author = {Jean-Philippe Bernardy and Shalom Lappin},
-	title = {The Influence of Context on Sentence Acceptability Judgements},
-	booktitle = {Proceedings of the ACL},
-	year = {2018}
-},
-
-@inproceedings{bernardy_compositional_2018,
-	author = {Jean-Philippe Bernardy and Rasmus Blanck and Stergios Chatzikyriakidis and Shalom Lappin},
-	Booktitle = {Proceedings of the International Workshop on Language, 
-                     Cognition and Computational Models, COLING 2018, Santa Fe, 
-                     New Mexico},
-	Title = {A Compositional {Bayesian} Semantics for Natural Language},
-	Pages = {1--11},
-	Year = {2018}
-},
-
-@misc{bernardy_computational_2018,
-	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
-	title = {A Computational Treatment of Anaphora and its Algorithmic Implementation},
-	note = {In submission},
-	year = {2018}
+@article{bernardy_linear_2018,
+	author = {Jean-Philippe Bernardy and Arnaud Spiwack and Mathieu Boespflug and Ryan Newton and Simon {Peyton Jones}},
+	title = {Linear Haskell: practical linearity in a higher-order polymorphic language},
+	year = {2018},
+	journal = {Proceedings of the ACM on Programming Languages},
+	volume = {2},
+	issue = {POPL}
 },
 
 @misc{bernardy_influence_2018,
@@ -1466,15 +1448,6 @@ by a built-in extraction procedure that removes this static information. We also
 	booktitle = {Proceedings of the ACL},
 	url = {http://aclweb.org/anthology/P18-2073},
 	year = {2018}
-},
-
-@article{bernardy_linear_2018,
-	author = {Jean-Philippe Bernardy and Arnaud Spiwack and Mathieu Boespflug and Ryan Newton and Simon {Peyton Jones}},
-	title = {Linear Haskell: practical linearity in a higher-order polymorphic language},
-	year = {2018},
-	journal = {Proceedings of the ACM on Programming Languages},
-	volume = {2},
-	issue = {POPL}
 },
 
 @article{bernardy_computational_2019,
@@ -1488,11 +1461,12 @@ by a built-in extraction procedure that removes this static information. We also
 	publisher = {}
 },
 
-@inproceedings{bernardy_what_2019,
+@inproceedings{bernardy_wide-coverage_2019,
 	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
-	title = {What Kind of Natural Language Inference are NLP Systems Learning: Is this Enough?},
-	booktitle = {Proceedings of ICAART},
-	year = {2019}
+	title = {A Wide-Coverage Symbolic Natural Language Inference System},
+	year = {2019},
+	booktitle = {Proceedings of the 22nd Nordic Conference on Computational Linguistics},
+	publisher = {ACL}
 },
 
 @inproceedings{bernardy_bayesian_2019,
@@ -1523,16 +1497,8 @@ by a built-in extraction procedure that removes this static information. We also
 @inproceedings{bernardy_what_2019,
 	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
 	title = {What Kind of Natural Language Inference are NLP Systems Learning: Is this Enough?},
-	booktitle = {13th International Conference on Agents and Artificial Intelligence},
+	booktitle = {Proceedings of the 13th International Conference on Agents and Artificial Intelligence},
 	year = {2019}
-},
-
-@inproceedings{bernardy_wide-coverage_2019,
-	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
-	title = {A Wide-Coverage Symbolic Natural Language Inference System},
-	year = {2019},
-	booktitle = {Proceedings of the 22nd Nordic Conference on Computational Linguistics},
-	publisher = {ACL}
 },
 
 @misc{bernardy_computational_2020,
@@ -1566,14 +1532,8 @@ by a built-in extraction procedure that removes this static information. We also
 	title = {Interactive theorem proving and program development: {Coq'Art:} the calculus of inductive constructions},
 	shorttitle = {Interactive theorem proving and program development},
 	publisher = {{Springer-Verlag} New York Inc},
-	year = {2004}
-},
-
-@book{bertot_coqart_2010,
-	author = {Yves Bertot and Pierre Cast\'{e}ran},
-	file = {:/home/bernardy/Papers/Coq'Art-2010.pdf:pdf},
-	title = {{Coq'Art}},
-	year = {2010}
+	year = {2004},
+	see = {:bertot_interactive_2013}
 },
 
 @book{bertot_interactive_2013,
@@ -1611,19 +1571,6 @@ by a built-in extraction procedure that removes this static information. We also
 	keywords = {aop}
 },
 
-@article{bird_bruijn_1999,
-	author = {Richard Bird and Ross Paterson},
-	file = {:/home/bernardy/Papers/de Bruijn Notation as a Nested Datatype-1999.pdf:pdf},
-	title = {{de Bruijn} Notation as a Nested Datatype},
-	journal = {Journal of Functional Programming},
-	volume = {9},
-	number = {1},
-	pages = {77--91},
-	year = {1999},
-	URL = {http://dx.doi.org/10.1017/S0956796899003366},
-	publisher = {Cambridge Univ Press}
-},
-
 @article{bird_generalised_1999,
 	author = {Richard Bird and Ross Paterson},
 	file = {:/home/bernardy/Papers/Generalised folds for nested datatypes-1999.pdf:pdf},
@@ -1636,6 +1583,19 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {1999},
 	keywords = {aop},
 	pages = {200--222}
+},
+
+@article{bird_bruijn_1999,
+	author = {Richard Bird and Ross Paterson},
+	file = {:/home/bernardy/Papers/de Bruijn Notation as a Nested Datatype-1999.pdf:pdf},
+	title = {{de Bruijn} Notation as a Nested Datatype},
+	journal = {Journal of Functional Programming},
+	volume = {9},
+	number = {1},
+	pages = {77--91},
+	year = {1999},
+	URL = {http://dx.doi.org/10.1017/S0956796899003366},
+	publisher = {Cambridge Univ Press}
 },
 
 @article{birkedal_categorical_2005,
@@ -1784,13 +1744,6 @@ proof is directly performed for any ordered set and not only for Boolean values.
 	volume = {5520},
 	series = {LNCS},
 	publisher = {Springer}
-},
-
-@article{bowman_large_2015,
-	author = {Samuel R Bowman and Gabor Angeli and Christopher Potts and Christopher D Manning},
-	title = {A large annotated corpus for learning natural language inference},
-	journal = {arXiv preprint arXiv:1508.05326},
-	year = {2015}
 },
 
 @InProceedings{bowman_large_2015,
@@ -2145,17 +2098,6 @@ proof is directly performed for any ordered set and not only for Boolean values.
 	organization = {Springer}
 },
 
-@article{chatzikyriakidis_natural_2014,
-	author = {Stergios Chatzikyriakidis and Zhaohui Luo},
-	title = {Natural language inference in Coq},
-	journal = {Journal of Logic, Language and Information},
-	volume = {23},
-	number = {4},
-	pages = {441--480},
-	year = {2014},
-	publisher = {Springer}
-},
-
 @InProceedings{chatzikyriakidis_adverbs_2014,
 	author = {S. Chatzikyriakidis},
 	title = {Adverbs in a modern type theory},
@@ -2170,22 +2112,15 @@ proof is directly performed for any ordered set and not only for Boolean values.
 	OPTnote = {}
 },
 
-@InProceedings{chatzikyriakidis_overview_2017,
-	author = {Stergios Chatzikyriakidis and Robin Cooper and Simon Dobnik and Staffan Larsson},
-	title = {An overview of Natural Language Inference Data Collection: The way forward?},
-	booktitle = {Proceedings of the Computing Natural Language Inference Workshop},
-	year = {2017},
-	url = {http://aclweb.org/anthology/W17-7203}
-},
-
-@article{chatzikyriakidis_type_2017,
-	author = {Stergios Chatzikyriakidis and Mathieu Lafourcade and Lionel Ramadier and Manel Zarrouk},
-	title = {Type theories and lexical networks: Using serious games as the basis for multi-Sorted typed systems},
-	journal = {Journal of Language Modelling},
-	volume = {5},
-	number = {2},
-	pages = {229--272},
-	year = {2017}
+@article{chatzikyriakidis_natural_2014,
+	author = {Stergios Chatzikyriakidis and Zhaohui Luo},
+	title = {Natural language inference in Coq},
+	journal = {Journal of Logic, Language and Information},
+	volume = {23},
+	number = {4},
+	pages = {441--480},
+	year = {2014},
+	publisher = {Springer}
 },
 
 @Article{chatzikyriakidis_adjectival_2017,
@@ -2198,6 +2133,14 @@ proof is directly performed for any ordered set and not only for Boolean values.
 	pages = {45--88}
 },
 
+@InProceedings{chatzikyriakidis_overview_2017,
+	author = {Stergios Chatzikyriakidis and Robin Cooper and Simon Dobnik and Staffan Larsson},
+	title = {An overview of Natural Language Inference Data Collection: The way forward?},
+	booktitle = {Proceedings of the Computing Natural Language Inference Workshop},
+	year = {2017},
+	url = {http://aclweb.org/anthology/W17-7203}
+},
+
 @incollection{chatzikyriakidis_interpretation_2017,
 	author = {S. Chatzikyriakidis and Z. Luo},
 	title = {On the interpretation of common nouns: Types versus predicates},
@@ -2205,6 +2148,16 @@ proof is directly performed for any ordered set and not only for Boolean values.
 	pages = {43--70},
 	year = {2017},
 	publisher = {Springer}
+},
+
+@article{chatzikyriakidis_type_2017,
+	author = {Stergios Chatzikyriakidis and Mathieu Lafourcade and Lionel Ramadier and Manel Zarrouk},
+	title = {Type theories and lexical networks: Using serious games as the basis for multi-Sorted typed systems},
+	journal = {Journal of Language Modelling},
+	volume = {5},
+	number = {2},
+	pages = {229--272},
+	year = {2017}
 },
 
 @inproceedings{chaudhuri_classical_2010,
@@ -2550,26 +2503,10 @@ nondeterminism and encapsulated search turn out to be elegant and powerful means
 	note = {\url{ftp://ftp.cogsci.ed.ac.uk/pub/FRACAS/del16.ps.gz}.}
 },
 
-@TechReport{cooper_using_1996,
-	author = {R. Cooper and D. Crouch and J. van Eijck and C. Fox and J. van Genabith and J. Jaspars and H. Kamp and D. Milward and M. Pinkal and M. Poesio and S. Pulman},
-	title = {Using the framework.},
-	type = {Technical Report {LRE 62-051r}},
-	year = {1996},
-	institution = {The FraCaS consortium},
-	OPTkey = {},
-	OPTvolume = {},
-	OPTnumber = {},
-	OPTpages = {},
-	OPTmonth = {},
-	note = {\url{ftp://ftp.cogsci.ed.ac.uk/pub/FRACAS/del16.ps.gz}.},
-	OPTannote = {}
-},
-
 @incollection{cooper_probabilistic_2014,
 	author = {R. Cooper and S. Dobnik and S. Lappin and S. Larsson},
 	Address = {Gothenburg, Sweden},
-	Booktitle = {Proceedings of the EACL 2014 Workshop on Type Theory and Natural   
-                     Language Semantics (TTNLS)},
+	Booktitle = {Proceedings of the EACL 2014 Workshop on Type Theory and Natural Language Semantics (TTNLS)},
 	Pages = {72--79},
 	Publisher = {Association of Computational Linguistics},
 	Title = {A Probabilistic Rich Type Theory for Semantic Interpretation},
@@ -2581,23 +2518,13 @@ nondeterminism and encapsulated search turn out to be elegant and powerful means
 	title = {Probabilistic type theory and natural language semantics},
 	journal = {LiLT (Linguistic Issues in Language Technology)},
 	volume = {10},
-	pages = {1-43},
+	pages = {1--43},
 	year = {2015}
-},
-
-@article{cooper_probabilistic_2015,
-	author = {R. Cooper and S. Dobnik and S. Lappin and S. Larsson},
-	Journal = {Linguistic Issues in Language Technology},
-	Pages = {1--43},
-	Title = {Probabilistic Type Theory and Natural Language Semantics},
-	Volume = {10},
-	Year = {2015}
 },
 
 @incollection{cooper_adapting_2017,
 	author = {Robin Cooper},
-	editor = {Chatzikyriakidis, Stergios
-and Luo, Zhaohui},
+	editor = {Chatzikyriakidis, Stergios and Luo, Zhaohui},
 	title = {Adapting Type Theory with Records for Natural Language Semantics},
 	booktitle = {Modern Perspectives in Type-Theoretical Semantics},
 	year = {2017},
@@ -2608,22 +2535,13 @@ and Luo, Zhaohui},
 	url = {http://dx.doi.org/10.1007/978-3-319-50422-3_4}
 },
 
-@incollection{cooper_adapting_2017,
-	author = {Robin Cooper},
-	title = {Adapting type theory with records for natural language semantics},
-	booktitle = {Modern Perspectives in Type-Theoretical Semantics},
-	editor = {Chatzikyriakidis, Stergios and Luo, Zhaohui},
-	pages = {71--94},
-	year = {2017},
-	publisher = {Springer}
-},
-
 @article{cooper_type_????,
 	author = {Robin Cooper and Jonathan Ginzburg},
 	title = {Type theory with records for natural language semantics},
 	journal = {Handbook of Contemporary Semantic Theory, The},
 	pages = {375--407},
-	publisher = {Wiley Online Library}
+	publisher = {Wiley Online Library},
+	see = {:cooper_adapting_2017}
 },
 
 @inproceedings{coquand_analysis_1986,
@@ -2709,15 +2627,6 @@ and Luo, Zhaohui},
 @incollection{dagan_pascal_2006,
 	author = {Ido Dagan and Oren Glickman and Bernardo Magnini},
 	title = {The {PASCAL} recognising textual entailment challenge},
-	booktitle = {Machine learning challenges. evaluating predictive uncertainty, visual object classification, and recognising tectual entailment},
-	pages = {177--190},
-	year = {2006},
-	publisher = {Springer}
-},
-
-@incollection{dagan_pascal_2006,
-	author = {Ido Dagan and Oren Glickman and Bernardo Magnini},
-	title = {The {PASCAL} recognising textual entailment challenge},
 	booktitle = {Machine learning challenges. Evaluating predictive uncertainty, visual object classification, and recognising tectual entailment},
 	pages = {177--190},
 	year = {2006},
@@ -2773,13 +2682,6 @@ and Luo, Zhaohui},
 	address = {Berlin, Heidelberg}
 },
 
-@misc{danielsson_agda_2010,
-	author = {Nils Anders Danielsson},
-	title = {The {Agda} standard library},
-	url = {http://www.cs.nott.ac.uk/~nad/repos/lib/},
-	year = {2010}
-},
-
 @inproceedings{danielsson_total_2010,
 	author = {Nils Anders Danielsson},
 	title = {Total parser combinators},
@@ -2809,7 +2711,8 @@ and Luo, Zhaohui},
 	author = {Nils Anders Danielsson and  {The Agda Team}},
 	title = {The {Agda} standard library, version 0.7},
 	url = {http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Libraries.StandardLibrary},
-	year = {2013}
+	year = {2013},
+	see = {version:danielsson_agda_2011}
 },
 
 @inproceedings{daniyar_sensala_2018,
@@ -3066,17 +2969,17 @@ and Luo, Zhaohui},
 	publisher = {ACL}
 },
 
-@inproceedings{ek_much_2020,
-	author = {Adam Ek and Jean-Philippe Bernardy},
-	title = {How much of enhanced UD is contained in UD?},
-	booktitle = {????},
-	year = {2020}
-},
-
 @inproceedings{ek_punctuation_2020,
 	author = {Adam Ek and Jean-Philippe Bernardy},
 	title = {How does Punctuation Affect Neural Models in Natural Language Inference},
 	booktitle = {Proceedings of Probabilities and Meaning},
+	year = {2020}
+},
+
+@inproceedings{ek_much_2020,
+	author = {Adam Ek and Jean-Philippe Bernardy},
+	title = {How much of enhanced UD is contained in UD?},
+	booktitle = {????},
 	year = {2020}
 },
 
@@ -3130,6 +3033,14 @@ and Luo, Zhaohui},
 	publisher = {Springer}
 },
 
+@InProceedings{emerson_semantic_2017,
+	author = {Guy Emerson and Ann Copestake},
+	title = {Semantic Composition via Probabilistic Model Theory},
+	booktitle = {IWCS 2017 - 12th International Conference on Computational Semantics - Long papers},
+	year = {2017},
+	url = {http://aclweb.org/anthology/W17-6806}
+},
+
 @article{emerson_variational_2017,
 	author = {Guy Emerson and Ann Copestake},
 	title = {Variational Inference for Logical Inference},
@@ -3137,14 +3048,6 @@ and Luo, Zhaohui},
 	volume = {abs/1709.00224},
 	year = {2017},
 	url = {http://arxiv.org/abs/1709.00224}
-},
-
-@InProceedings{emerson_semantic_2017,
-	author = {Guy Emerson and Ann Copestake},
-	title = {Semantic Composition via Probabilistic Model Theory},
-	booktitle = {IWCS 2017 - 12th International Conference on Computational Semantics - Long papers},
-	year = {2017},
-	url = {http://aclweb.org/anthology/W17-6806}
 },
 
 @InProceedings{emoto_generate_2012,
@@ -3563,6 +3466,21 @@ and Luo, Zhaohui},
 	pages = {1--71}
 },
 
+@inproceedings{gibbons_parametric_2009,
+	author = {Jeremy Gibbons and Ross Paterson},
+	address = {Edinburgh, Scotland},
+	title = {Parametric datatype-genericity},
+	isbn = {978-1-60558-510-9},
+	url = {http://portal.acm.org/citation.cfm?id=1596626},
+	doi = {10.1145/1596614.1596626},
+	abstract = {Datatype-generic programs are programs that are parametrized by a datatype or type functor: whereas polymorphic programs abstract from the "integers" in "lists of integers",datatype-generic programs abstract from the "lists of". There are two main styles of datatype-generic programming: the Algebra of Programming approach, characterized by structured recursion operators arising from initial algebras and final coalgebras, and the Generic Haskell approach, characterized by case analysis over the structure of a datatype. We show that the former enjoys a kind of higher-order naturality, relating the behaviours of generic functions at different types; in contrast, the latter is ad{\textasciitilde}hoc, with no coherence required or provided between the various clauses of a definition. Moreover, the naturality properties arise "for free", simply from the parametrized types of the generic functions: we present a higher-order parametricity theorem for datatype-generic operators.},
+	booktitle = {Proceedings of the 2009 {ACM} {SIGPLAN} workshop on Generic programming},
+	publisher = {{ACM}},
+	year = {2009},
+	keywords = {folds, free theorems, functional programming, generic programming, higher-order functions, higher-order natural transformations, parametricity, unfolds},
+	pages = {85--93}
+},
+
 @article{gibbons_essence_2009,
 	author = {Jeremy Gibbons and Bruno C. D. S. Oliveira},
 	file = {:/home/bernardy/Papers/The essence of the Iterator pattern-2009.pdf:pdf},
@@ -3578,21 +3496,6 @@ and Luo, Zhaohui},
 	volume = {19},
 	year = {2009},
 	see = {version:gibbons_essence_2006}
-},
-
-@inproceedings{gibbons_parametric_2009,
-	author = {Jeremy Gibbons and Ross Paterson},
-	address = {Edinburgh, Scotland},
-	title = {Parametric datatype-genericity},
-	isbn = {978-1-60558-510-9},
-	url = {http://portal.acm.org/citation.cfm?id=1596626},
-	doi = {10.1145/1596614.1596626},
-	abstract = {Datatype-generic programs are programs that are parametrized by a datatype or type functor: whereas polymorphic programs abstract from the "integers" in "lists of integers",datatype-generic programs abstract from the "lists of". There are two main styles of datatype-generic programming: the Algebra of Programming approach, characterized by structured recursion operators arising from initial algebras and final coalgebras, and the Generic Haskell approach, characterized by case analysis over the structure of a datatype. We show that the former enjoys a kind of higher-order naturality, relating the behaviours of generic functions at different types; in contrast, the latter is ad{\textasciitilde}hoc, with no coherence required or provided between the various clauses of a definition. Moreover, the naturality properties arise "for free", simply from the parametrized types of the generic functions: we present a higher-order parametricity theorem for datatype-generic operators.},
-	booktitle = {Proceedings of the 2009 {ACM} {SIGPLAN} workshop on Generic programming},
-	publisher = {{ACM}},
-	year = {2009},
-	keywords = {folds, free theorems, functional programming, generic programming, higher-order functions, higher-order natural transformations, parametricity, unfolds},
-	pages = {85--93}
 },
 
 @article{giegerich_efficient_2003,
@@ -3672,7 +3575,8 @@ Papers in Linguistics.}
 	number = {1},
 	pages = {1--101},
 	year = {1987},
-	publisher = {Elsevier}
+	publisher = {Elsevier},
+	see = {:girard_advances_1995;:girard_light_1998}
 },
 
 @incollection{girard_parallelism_1987,
@@ -3751,16 +3655,6 @@ Papers in Linguistics.}
 	publisher = {Elsevier}
 },
 
-@inbook{girard_blind_2004,
-	author = {Jean-Yves Girard},
-	file = {:/home/bernardy/Papers/The blind spot-2004.pdf:pdf},
-	chapter = {Part III -},
-	pages = {182--272},
-	title = {{The blind spot}},
-	url = {http://iml.univ-mrs.fr/\~{}girard/coursang/coursang0.pdf.gz},
-	year = {2004}
-},
-
 @inbook{girard_point_2004,
 	author = {Jean-Yves Girard},
 	file = {:/home/bernardy/Papers/Le point aveugle-2004.pdf:pdf},
@@ -3772,6 +3666,16 @@ Papers in Linguistics.}
 	title = {{Le point aveugle}},
 	url = {http://www.cairn.info/revue-topique-2003-3-page-201.htm},
 	volume = {84},
+	year = {2004}
+},
+
+@inbook{girard_blind_2004,
+	author = {Jean-Yves Girard},
+	file = {:/home/bernardy/Papers/The blind spot-2004.pdf:pdf},
+	chapter = {Part III -},
+	pages = {182--272},
+	title = {{The blind spot}},
+	url = {http://iml.univ-mrs.fr/\~{}girard/coursang/coursang0.pdf.gz},
 	year = {2004}
 },
 
@@ -3838,6 +3742,14 @@ Textual Entailment.},
 	year = {2008}
 },
 
+@techreport{gonthier_ssreflect_tutorial_2009,
+	author = {G. Gonthier and S. Le and  others},
+	forcedkey = {gonthier_ssreflect_tutorial_2009},
+	title = {An {Ssreflect} Tutorial},
+	year = {2009},
+	institution = {{INRIA}}
+},
+
 @inproceedings{gonthier_ssreflect_2009,
 	author = {G. Gonthier},
 	title = {Ssreflect: Structured Scripting for Higher-Order
@@ -3846,14 +3758,6 @@ Textual Entailment.},
 	pages = {1},
 	year = {2009},
 	publisher = {ACM}
-},
-
-@techreport{gonthier_ssreflect_tutorial_2009,
-	author = {G. Gonthier and S. Le and  others},
-	forcedkey = {gonthier_ssreflect_tutorial_2009},
-	title = {An {Ssreflect} Tutorial},
-	year = {2009},
-	institution = {{INRIA}}
 },
 
 @incollection{gonthier_machine-checked_2013,
@@ -3952,19 +3856,19 @@ Textual Entailment.},
 	annote = {{{\textless}p{\textgreater}Draft,} will be published as a revision to {{\textbackslash}cite{Gregor:2007:PWC}{\textless}/p{\textgreater}}}
 },
 
-@misc{gregor_conceptgcc_2008,
-	author = {Douglas Gregor},
-	title = {{Concept{GCC}} --- a prototype compiler for {{\textbackslash}{\textbackslash}Cpp{}} concepts},
-	year = {2008},
-	keywords = {sibylle, wgp08}
-},
-
 @techreport{gregor_core_2008,
 	author = {D Gregor and A Lumsdaine},
 	title = {Core Concepts for the {C++0x} Standard Library},
 	year = {2008},
 	keywords = {sibylle, wgp08},
 	see = {related_library:gregor_concepts_2006}
+},
+
+@misc{gregor_conceptgcc_2008,
+	author = {Douglas Gregor},
+	title = {{Concept{GCC}} --- a prototype compiler for {{\textbackslash}{\textbackslash}Cpp{}} concepts},
+	year = {2008},
+	keywords = {sibylle, wgp08}
 },
 
 @article{grishin_nonstandard_1974,
@@ -4358,13 +4262,6 @@ Textual Entailment},
 	publisher = {Oxford University Press}
 },
 
-@MISC{hofmann_in-place_2000,
-	author = {Martin Hofmann},
-	title = {In-place update with linear types or How to compile functional programs into malloc()-free C},
-	note = {Preprint},
-	year = {2000}
-},
-
 @incollection{hofmann_type_2000,
 	author = {Martin Hofmann},
 	affiliation = {LFCS Edinburgh Mayfield Rd Edinburgh EH9 3JZ UK},
@@ -4379,6 +4276,13 @@ Textual Entailment},
 	volume = {1782},
 	doi = {10.1007/3-540-46425-5_11},
 	abstract = {We show how linear typing can be used to obtain functional programs which modify heap-allocated data structures in place. We present this both as a “design pattern” for writing C-code in a functional style and as a compilation process from linearly typed first-order functional programs into malloc()-free C code. The main technical result is the correctness of this compilation. The crucial innovation over previous linear typing schemes consists of the introduction of a resource type ◊ which controls the number of constructor symbols such as cons in recursive definitions and ensures linear space while restricting expressive power surprisingly little. While the space efficiency brought about by the new typing scheme and the compilation into C can also be realised by with state-of-the-art optimising compilers for functional languages such as Ocaml [ 15 ], the present method provides guaranteed bounds on heap space which will be of use for applications such as languages for embedded systems or ‘proof carrying code’ [ 18 ].},
+	year = {2000}
+},
+
+@MISC{hofmann_in-place_2000,
+	author = {Martin Hofmann},
+	title = {In-place update with linear types or How to compile functional programs into malloc()-free C},
+	note = {Preprint},
 	year = {2000}
 },
 
@@ -4779,16 +4683,6 @@ foundation for programming with nested types in Haskell.},
 	annote = {{{\textless}p{\textgreater}lazyArray} :: {(Int,} Int) -\&gt; [(int,a)] -\&gt; Array Int [a]{\textless}/p{\textgreater}}
 },
 
-@book{jones_partial_1993,
-	author = {Neil D. Jones and Carsten K. Gomard and Peter Sestoft},
-	file = {:/home/bernardy/Papers/Partial Evaluation and Automatic Program Generation-1993.pdf:pdf},
-	booktitle = {Transformation},
-	publisher = {Prentice Hall},
-	title = {Partial Evaluation and Automatic Program Generation},
-	url = {http://www.dina.dk/~sestoft/pebook/pebook.html},
-	year = {1993}
-},
-
 @inproceedings{jones_system_1993,
 	author = {Mark Jones},
 	title = {A system of constructor classes: overloading and implicit higher-order polymorphism},
@@ -4799,6 +4693,16 @@ foundation for programming with nested types in Haskell.},
 	year = {1993},
 	keywords = {typeclass},
 	pages = {52--61}
+},
+
+@book{jones_partial_1993,
+	author = {Neil D. Jones and Carsten K. Gomard and Peter Sestoft},
+	file = {:/home/bernardy/Papers/Partial Evaluation and Automatic Program Generation-1993.pdf:pdf},
+	booktitle = {Transformation},
+	publisher = {Prentice Hall},
+	title = {Partial Evaluation and Automatic Program Generation},
+	url = {http://www.dina.dk/~sestoft/pebook/pebook.html},
+	year = {1993}
 },
 
 @article{jones_dictionary-free_1994,
@@ -4823,21 +4727,6 @@ foundation for programming with nested types in Haskell.},
 	year = {2000},
 	keywords = {typeclass},
 	pages = {230--244}
-},
-
-@InProceedings{joubert_jeuxdemots_2018,
-	author = {Mathieu Lafourcade Alain Joubert and Nathalie Le Brun},
-	title = {The JeuxDeMots Project is 10 Years Old: what Assessments?},
-	booktitle = {Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)},
-	year = {2018},
-	month = {may},
-	date = {7-12},
-	location = {Miyazaki, Japan},
-	editor = {Jon Chamberlain and Udo Kruschwitz and Karën Fort and Christopher Cieri},
-	publisher = {European Language Resources Association (ELRA)},
-	address = {Paris, France},
-	isbn = {979-10-95546-10-8},
-	language = {english}
 },
 
 @inproceedings{joulin_inferring_2015,
@@ -5416,17 +5305,9 @@ foundation for programming with nested types in Haskell.},
 	author = {Mathieu Lafourcade and Alain Joubert},
 	title = {Jeuxdemots: un prototype ludique pour l'{\'e}mergence de relations entre termes},
 	booktitle = {JADT'08: Journ{\'e}es internationales d'Analyse statistiques des Donn{\'e}es Textuelles},
+	ADDRESS = {France},
 	pages = {657--666},
 	year = {2008}
-},
-
-@inproceedings{lafourcade_jeuxdemots_2008,
-	author = {Mathieu Lafourcade and Alain Joubert},
-	TITLE = {{JeuxDeMots : un prototype ludique pour l'{\'e}mergence de relations entre termes}},
-	BOOKTITLE = {{JADT'08 : Journ{\'e}es internationales d'Analyse statistiques des Donn{\'e}es Textuelles}},
-	ADDRESS = {France},
-	PAGES = {657-666},
-	YEAR = {2008}
 },
 
 @book{lafourcade_games_2015,
@@ -5434,6 +5315,21 @@ foundation for programming with nested types in Haskell.},
 	title = {Games with a Purpose (GWAPS)},
 	year = {2015},
 	publisher = {John Wiley \& Sons}
+},
+
+@InProceedings{lafourcade_jeuxdemots_2018,
+	author = {Mathieu Lafourcade and Alain Joubert and Nathalie Le Brun},
+	title = {The JeuxDeMots Project is 10 Years Old: what Assessments?},
+	booktitle = {Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018)},
+	year = {2018},
+	month = {may},
+	date = {7-12},
+	location = {Miyazaki, Japan},
+	editor = {Jon Chamberlain and Udo Kruschwitz and Karën Fort and Christopher Cieri},
+	publisher = {European Language Resources Association (ELRA)},
+	address = {Paris, France},
+	isbn = {979-10-95546-10-8},
+	language = {english}
 },
 
 @inproceedings{lai_illinois-lh_2014,
@@ -5774,6 +5670,15 @@ Gothenburg},
 	year = {1994}
 },
 
+@InProceedings{luo_common_2012,
+	author = {Z. Luo},
+	title = {Common Nouns as Types},
+	booktitle = {Logical Aspects of Computational Linguistics (LACL'2012). LNCS 7351},
+	year = {2012},
+	editor = {D. Bechet and A. Dikovsky},
+	OPTpages = {173-185}
+},
+
 @article{luo_formal_2012,
 	author = {Zhaohui Luo},
 	title = {Formal semantics in modern type theories with coercive subtyping},
@@ -5783,15 +5688,6 @@ Gothenburg},
 	pages = {491--513},
 	year = {2012},
 	publisher = {Springer}
-},
-
-@InProceedings{luo_common_2012,
-	author = {Z. Luo},
-	title = {Common Nouns as Types},
-	booktitle = {Logical Aspects of Computational Linguistics (LACL'2012). LNCS 7351},
-	year = {2012},
-	editor = {D. Bechet and A. Dikovsky},
-	OPTpages = {173-185}
 },
 
 @inproceedings{lmmel_generic_2002,
@@ -5988,19 +5884,19 @@ Gothenburg},
 	year = {2019}
 },
 
-@inproceedings{marelli_semeval-2014_2014,
-	author = {Marco Marelli and Luisa Bentivogli and Marco Baroni and Raffaella Bernardi and Stefano Menini and Roberto Zamparelli},
-	title = {Semeval-2014 task 1: Evaluation of compositional distributional semantic models on full sentences through semantic relatedness and textual entailment},
-	booktitle = {Proceedings of the 8th international workshop on semantic evaluation (SemEval 2014)},
-	pages = {1--8},
-	year = {2014}
-},
-
 @inproceedings{marelli_sick_2014,
 	author = {Marco Marelli and Stefano Menini and Marco Baroni and Luisa Bentivogli and Raffaella Bernardi and Roberto Zamparelli},
 	title = {A {SICK} cure for the evaluation of compositional distributional semantic models.},
 	booktitle = {LREC},
 	pages = {216--223},
+	year = {2014}
+},
+
+@inproceedings{marelli_semeval-2014_2014,
+	author = {Marco Marelli and Luisa Bentivogli and Marco Baroni and Raffaella Bernardi and Stefano Menini and Roberto Zamparelli},
+	title = {Semeval-2014 task 1: Evaluation of compositional distributional semantic models on full sentences through semantic relatedness and textual entailment},
+	booktitle = {Proceedings of the 8th international workshop on semantic evaluation (SemEval 2014)},
+	pages = {1--8},
 	year = {2014}
 },
 
@@ -6035,20 +5931,6 @@ Gothenburg},
 	pages = {114--129},
 	year = {2012},
 	organization = {Springer}
-},
-
-@Book{martin-lof_intuitionistic_1984,
-	author = {P. Martin-L{\"{o}f}},
-	title = {Intuitionistic Type Theory},
-	publisher = {Bibliopolis},
-	year = {1984},
-	OPTeditor = {},
-	OPTvolume = {},
-	OPTseries = {},
-	OPTaddress = {},
-	OPTedition = {},
-	OPTmonth = {},
-	OPTnote = {}
 },
 
 @Unpublished{martin-lof_intuitionistic_1971,
@@ -6351,6 +6233,14 @@ Gothenburg},
 	howpublished = {\url{http://www.math.chalmers.se/~miquel/}}
 },
 
+@phdthesis{mishra-linger_irrelevance_2008,
+	author = {Nathan Mishra-Linger},
+	file = {:/home/bernardy/Papers/Irrelevance, Polymorphism, and Erasure in Type Theory-2008.pdf:pdf},
+	school = {Portland State University},
+	title = {Irrelevance, Polymorphism, and Erasure in Type Theory},
+	year = {2008}
+},
+
 @conference{mishra-linger_erasure_2008,
 	author = {N. Mishra-Linger and Tim Sheard},
 	file = {:/home/bernardy/Papers/Erasure and polymorphism in pure type systems-2008.pdf:pdf},
@@ -6359,14 +6249,6 @@ Gothenburg},
 	pages = {350--364},
 	year = {2008},
 	organization = {Springer-Verlag}
-},
-
-@phdthesis{mishra-linger_irrelevance_2008,
-	author = {Nathan Mishra-Linger},
-	file = {:/home/bernardy/Papers/Irrelevance, Polymorphism, and Erasure in Type Theory-2008.pdf:pdf},
-	school = {Portland State University},
-	title = {Irrelevance, Polymorphism, and Erasure in Type Theory},
-	year = {2008}
 },
 
 @inproceedings{mitchell_deriving_2007,
@@ -6416,7 +6298,8 @@ Gothenburg},
 	booktitle = {Approaches to natural language},
 	pages = {221--242},
 	year = {1973},
-	publisher = {Springer}
+	publisher = {Springer},
+	see = {:montague_proper_1974}
 },
 
 @incollection{montague_proper_1974,
@@ -7386,17 +7269,6 @@ F
 	bibsource = {dblp computer science bibliography, http://dblp.org}
 },
 
-@incollection{robbes_approach_2007,
-	author = {Romain Robbes and Michele Lanza and Mircea Lungu},
-	title = {An Approach to Software Evolution Based on Semantic Change},
-	url = {http://dx.doi.org/10.1007/978-3-540-71289-3_4},
-	abstract = {The analysis of the evolution of software systems is a useful source of information for a variety of activities, such as reverse engineering, maintenance, and predicting the future evolution of these systems. Current software evolution research is mainly based on the information contained in versioning systems such as {CVS} and {SubVersion.} But the evolutionary information contained therein is incomplete and of low quality, hence limiting the scope of evolution research. It is incomplete because the historical information is only recorded at the explicit request of the developers (a commit in the classical checkin/checkout model). It is of low quality because the file-based nature of versioning systems leads to a view of software as being a set of files. In this paper we present a novel approach to software evolution analysis which is based on the recording of all semantic changes performed on a system, such as refactorings. We describe our approach in detail, and demonstrate how it can be used to perform fine-grained software evolution analysis.},
-	booktitle = {Fundamental Approaches to Software Engineering},
-	year = {2007},
-	keywords = {evolution},
-	pages = {27--41}
-},
-
 @article{robbes_change-based_2007,
 	author = {Romain Robbes and Michele Lanza},
 	file = {:/home/bernardy/Papers/A Change-based Approach to Software Evolution-2007.pdf:pdf},
@@ -7409,6 +7281,17 @@ F
 	year = {2007},
 	keywords = {evolution},
 	pages = {93--109}
+},
+
+@incollection{robbes_approach_2007,
+	author = {Romain Robbes and Michele Lanza and Mircea Lungu},
+	title = {An Approach to Software Evolution Based on Semantic Change},
+	url = {http://dx.doi.org/10.1007/978-3-540-71289-3_4},
+	abstract = {The analysis of the evolution of software systems is a useful source of information for a variety of activities, such as reverse engineering, maintenance, and predicting the future evolution of these systems. Current software evolution research is mainly based on the information contained in versioning systems such as {CVS} and {SubVersion.} But the evolutionary information contained therein is incomplete and of low quality, hence limiting the scope of evolution research. It is incomplete because the historical information is only recorded at the explicit request of the developers (a commit in the classical checkin/checkout model). It is of low quality because the file-based nature of versioning systems leads to a view of software as being a set of files. In this paper we present a novel approach to software evolution analysis which is based on the recording of all semantic changes performed on a system, such as refactorings. We describe our approach in detail, and demonstrate how it can be used to perform fine-grained software evolution analysis.},
+	booktitle = {Fundamental Approaches to Software Engineering},
+	year = {2007},
+	keywords = {evolution},
+	pages = {27--41}
 },
 
 @book{roberts_modal_1987,
@@ -8231,15 +8114,6 @@ and proving by way of examples.},
 	publisher = {Kluwer Adademic Publishers}
 },
 
-@inproceedings{tov_practical_2011,
-	author = {Jesse A Tov and Riccardo Pucella},
-	title = {Practical affine types},
-	booktitle = {POPL},
-	pages = {447--458},
-	year = {2011},
-	organization = {ACM}
-},
-
 @inproceedings{tov_theory_2011,
 	author = {Jesse A. Tov and Riccardo Pucella},
 	title = {A theory of substructural types and control},
@@ -8253,6 +8127,15 @@ and proving by way of examples.},
 	timestamp = {Tue, 25 Oct 2011 20:48:58 +0200},
 	biburl = {http://dblp.uni-trier.de/rec/bib/conf/oopsla/TovP11},
 	bibsource = {dblp computer science bibliography, http://dblp.org}
+},
+
+@inproceedings{tov_practical_2011,
+	author = {Jesse A Tov and Riccardo Pucella},
+	title = {Practical affine types},
+	booktitle = {POPL},
+	pages = {447--458},
+	year = {2011},
+	organization = {ACM}
 },
 
 @phdthesis{tov_practical_2012,
@@ -8572,6 +8455,16 @@ and proving by way of examples.},
 	publisher = {North-Holland}
 },
 
+@inbook{wadler_prettier_2003,
+	author = {Philip Wadler},
+	title = {A prettier printer},
+	Book = {The Fun of Programming, Cornerstones of Computing},
+	pages = {223--243},
+	editors = {Jeremy Gibbons and Oege {de Moor}},
+	year = {2003},
+	publisher = {Palgrave MacMillan}
+},
+
 @inproceedings{wadler_call-by-value_2003,
 	author = {Philip Wadler},
 	file = {:/home/bernardy/Papers/Call-by-value is dual to call-by-name-2003.pdf:pdf},
@@ -8602,16 +8495,6 @@ and proving by way of examples.},
 	year = {2003},
 	pages = {260--284},
 	see = {version:wadler_girardreynolds_2007}
-},
-
-@inbook{wadler_prettier_2003,
-	author = {Philip Wadler},
-	title = {A prettier printer},
-	Book = {The Fun of Programming, Cornerstones of Computing},
-	pages = {223--243},
-	editors = {Jeremy Gibbons and Oege {de Moor}},
-	year = {2003},
-	publisher = {Palgrave MacMillan}
 },
 
 @article{wadler_girardreynolds_2007,
@@ -8882,16 +8765,6 @@ worse. The trade-off is that partiality has consequences when dealing with ill-f
 	pages = {67--78}
 },
 
-@article{young_image_2014,
-	author = {Peter Young and Alice Lai and Micah Hodosh and Julia Hockenmaier},
-	title = {From image descriptions to visual denotations: New similarity metrics
-               for semantic inference over event descriptions},
-	journal = {{TACL}},
-	volume = {2},
-	pages = {67--78},
-	year = {2014}
-},
-
 @article{younger_recognition_1967,
 	author = {D.H. Younger},
 	title = {Recognition and parsing of context-free languages in time $n^3$},
@@ -9012,7 +8885,8 @@ worse. The trade-off is that partiality has consequences when dealing with ill-f
 	pagination = {section},
 	language = {english},
 	year = {2007},
-	month = {June}
+	month = {June},
+	see = {:free_software_foundation_gnu_1991}
 },
 
 @phdthesis{lpez_juan_design_2015,
@@ -9198,7 +9072,8 @@ worse. The trade-off is that partiality has consequences when dealing with ill-f
 	author = { {{The} Coq development team}},
 	title = {The {{Coq}} proof assistant},
 	url = {http://coq.inria.fr},
-	year = {2010}
+	year = {2010},
+	see = {:the_coq_development_team_coq_2011;:the_coq_development_team_coq_2012}
 },
 
 @misc{the_coq_development_team_coq_2011,
@@ -9212,7 +9087,8 @@ worse. The trade-off is that partiality has consequences when dealing with ill-f
 	author = { {{The} Coq development team}},
 	title = {The {{Coq}} proof assistant},
 	url = {http://coq.inria.fr},
-	year = {2012}
+	year = {2012},
+	see = {:the_coq_development_team_coq_2011}
 },
 
 @misc{the_ghc_team_unique_2013,
