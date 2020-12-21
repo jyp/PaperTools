@@ -4,7 +4,7 @@
 	title = {Formal parametric polymorphism},
 	isbn = {0-89791-560-7},
 	doi = {10.1145/158511.158622},
-	abstract = {A polymorphic function is parametric if its behavior does not depend on the type at which it is instantiated. Starting with Reynolds' work, the study of parametricity is typically semantic. In this paper, we develop a syntactic approach to parametricity, and a formal system that embodies this approach: system R . Girard's system F deals with terms and types; R is an extension of F that deals also with relations between types. In R **, it is possible to derive theorems about functions from their types, or “theorems for free”, as Wadler calls them. An easy “theorem for free” asserts that the type {∀XX→} Bool contains only constant functions; this is not provable in F. There are many harder and more substantial examples. Various metatheorems can also be obtained, such as a syntactic version of Reynolds' abstraction theorem.},
+	abstract = {A polymorphic function is parametric if its behavior does not depend on the type at which it is instantiated. Starting with Reynolds' work, the study of parametricity is typically semantic. In this paper, we develop a syntactic approach to parametricity, and a formal system that embodies this approach: system R . Girard's system F deals with terms and types; R is an extension of F that deals also with relations between types. In R **, it is possible to derive theorems about functions from their types, or “theorems for free”, as Wadler calls them. An easy “theorem for free” asserts that the type {∀X.X→ Bool} contains only constant functions; this is not provable in F. There are many harder and more substantial examples. Various metatheorems can also be obtained, such as a syntactic version of Reynolds' abstraction theorem.},
 	booktitle = {Proceedings of the 20th {ACM} {SIGPLAN-SIGACT} symposium on Principles of programming languages},
 	publisher = {{ACM}},
 	year = {1993},
@@ -1487,17 +1487,6 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {2018}
 },
 
-@article{bernardy_computational_2020,
-	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
-	title = {A Computational Treatment of Anaphora and its Algorithmic Implementation},
-	journal = {Journal of Logic, Language and Information},
-	volume = {},
-	number = {},
-	pages = {},
-	year = {2020},
-	publisher = {Springer}
-},
-
 @inproceedings{bernardy_wide-coverage_2019,
 	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
 	title = {A Wide-Coverage Symbolic Natural Language Inference System},
@@ -1538,18 +1527,23 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {2019}
 },
 
-@misc{bernardy_computational_2020,
+@article{bernardy_computational_2020,
+	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
+	title = {A Computational Treatment of Anaphora and its Algorithmic Implementation},
+	journal = {Journal of Logic, Language and Information},
+	volume = {},
+	number = {},
+	pages = {},
+	year = {2020},
+	publisher = {Springer}
+},
+
+@misc{bernardy_computational_extended_2020,
 	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis and Aleksandre Maskharashvili},
 	title = {A Computational Treatment of Anaphora and its Algorithmic Implementation: Extended Version},
 	note = {Available on the first author's homepage: \url{https://jyp.github.io/pdf/phoroi.pdf} or online \url{https://bit.ly/2xQ4G2M}},
-	year = {2020}
-},
-
-@inproceedings{bernardy_improving_2020,
-	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
-	title = {Improving the precision of natural textual entailment problem datasets},
-	booktitle = {Proceedings of the Language Resources and Evaluation Conference, 2020},
-	year = {2020}
+	year = {2020},
+	forcedkey = {bernardy_computational_extended_2020}
 },
 
 @article{bernardy_logic_2020,
@@ -1557,6 +1551,13 @@ by a built-in extraction procedure that removes this static information. We also
 	title = {A LOGIC WITH MEASURABLE SPACES FOR NATURAL LANGUAGE SEMANTICS},
 	journal = {Applied Mathematics, Informatics And Mechanics},
 	issue = {Special issue dedicated to Shalva Pkhakadze},
+	year = {2020}
+},
+
+@inproceedings{bernardy_improving_2020,
+	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
+	title = {Improving the precision of natural textual entailment problem datasets},
+	booktitle = {Proceedings of the Language Resources and Evaluation Conference, 2020},
 	year = {2020}
 },
 
@@ -2152,14 +2153,6 @@ proof is directly performed for any ordered set and not only for Boolean values.
 	pages = {3--14},
 	year = {2011},
 	organization = {ACM}
-},
-
-@phdthesis{grove_scope-taking_2019,
-	author = {Julian Grove},
-	year = {2019},
-	title = {Scope-taking and presupposition satisfaction},
-	school = {University of Chicago},
-	type = {Doctoral dissertation}
 },
 
 @article{charlow_monadic_2015,
@@ -4055,6 +4048,14 @@ Textual Entailment.},
 	address = {Stroudsburg, PA, USA}
 },
 
+@phdthesis{grove_scope-taking_2019,
+	author = {Julian Grove},
+	year = {2019},
+	title = {Scope-taking and presupposition satisfaction},
+	school = {University of Chicago},
+	type = {Doctoral dissertation}
+},
+
 @incollection{grudzinska_generalized_2017,
 	author = {Justyna Grudzi{\'{n}}ska and Marek Zawadowski},
 	editor = {Chatzikyriakidis, Stergios
@@ -4543,6 +4544,23 @@ Textual Entailment},
 	isbn = {978-3-540-44833-4},
 	doi = {10.1007/978-3-540-44833-4_6},
 	url = {https://doi.org/10.1007/978-3-540-44833-4_6}
+},
+
+@inproceedings{hudak_history_2007,
+	author = {Paul Hudak and John Hughes and Simon Peyton Jones and Philip Wadler},
+	title = {A History of Haskell: Being Lazy with Class},
+	year = {2007},
+	isbn = {9781595937667},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/1238844.1238856},
+	doi = {10.1145/1238844.1238856},
+	abstract = {This paper describes the history of Haskell, including its genesis and principles, technical contributions, implementations and tools, and applications and impact.},
+	booktitle = {Proceedings of the Third ACM SIGPLAN Conference on History of Programming Languages},
+	pages = {12–1–12–55},
+	numpages = {55},
+	location = {San Diego, California},
+	series = {HOPL III}
 },
 
 @article{hudson_incremental_1991,
@@ -6923,13 +6941,6 @@ well.}
 	pages = {39--50}
 },
 
-@inproceedings{pars_algebraic_2020,
-	author = {Yves Parès and Jean-Philippe Bernardy and Richard A. Eisenberg},
-	title = {Algebraic Effects with Tasks Build Composable Data Workflows},
-	booktitle = {Proceedings of the Haskell Symposium},
-	year = {2020}
-},
-
 @article{parker_detection_1983,
 	author = {{DS} Parker and {GJ} Popek and G Rudisin and A Stoughton and {BJ} Walker and E Walton and {JM} Chow and D Edwards and S Kiser and C Kline},
 	title = {Detection of Mutual Inconsistency in Distributed Systems},
@@ -6960,6 +6971,13 @@ well.}
 	publisher = {Emerald Group Publishing Ltd.},
 	series = {Current Research in Semantics/Pragmatics Interface},
 	volume = {21}
+},
+
+@inproceedings{pars_algebraic_2020,
+	author = {Yves Parès and Jean-Philippe Bernardy and Richard A. Eisenberg},
+	title = {Algebraic Effects with Tasks Build Composable Data Workflows},
+	booktitle = {Proceedings of the Haskell Symposium},
+	year = {2020}
 },
 
 @article{paterson_new_2001,
@@ -7053,6 +7071,18 @@ well.}
 	timestamp = {Sun, 02 Jun 2019 21:13:12 +0200},
 	biburl = {https://dblp.org/rec/conf/icfp/PetricekOM14.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org}
+},
+
+@misc{peyton_jones_wearing_2003,
+	author = {Simon Peyton Jones},
+	title = {Wearing the hair shirt: a retrospective on Haskell (2003)},
+	year = {2003},
+	month = {January},
+	abstract = {Haskell was 15 years old at the POPL'03 meeting, when I presented this talk: it was born at a meeting at the 1987 conference on Functional Programming and Computer Architecture (FPCA'87). In this talk, which is very much a personal view, I take a look back at the language, and try to tease out what we have learned from the experience of designing and implementing it. The main areas I discuss are: syntax (briefly), laziness (the hair shirt of the title), type classes, and sexy types. On the way, I try to identify a few open questions that I think merit further study.
+},
+	url = {https://www.microsoft.com/en-us/research/publication/wearing-hair-shirt-retrospective-haskell-2003/},
+	edition = {invited talk at POPL 2003},
+	note = {invited talk at POPL 2003}
 },
 
 @article{pfeifer_new_2013,
