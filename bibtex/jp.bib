@@ -212,9 +212,31 @@ of shapely types and refer to a forthcoming paper which applies this theory to d
 
 @inproceedings{abzianidze_tableau_2015,
 	author = {Lasha Abzianidze},
+	address = {Lisbon, Portugal},
 	title = {A Tableau Prover for Natural Logic and Language},
-	booktitle = {Proceedings of EMNLP15},
-	year = {2015}
+	url = {https://www.aclweb.org/anthology/D15-1296},
+	doi = {10.18653/v1/D15-1296},
+	urldate = {2021-03-01},
+	booktitle = {Proceedings of the 2015 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	month = {sep},
+	year = {2015},
+	pages = {2492--2502}
+},
+
+@article{abzianidze_learning_2020,
+	author = {Lasha Abzianidze},
+	title = {Learning as {Abduction}: {Trainable} {Natural} {Logic} {Theorem} {Prover} for {Natural} {Language} {Inference}},
+	shorttitle = {Learning as {Abduction}},
+	url = {http://arxiv.org/abs/2010.15909},
+	abstract = {Tackling Natural Language Inference with a logic-based method is becoming less and less common. While this might have been counterintuitive several decades ago, nowadays it seems pretty obvious. The main reasons for such a conception are that (a) logic-based methods are usually brittle when it comes to processing wide-coverage texts, and (b) instead of automatically learning from data, they require much of manual effort for development. We make a step towards to overcome such shortcomings by modeling learning from data as abduction: reversing a theorem-proving procedure to abduce semantic relations that serve as the best explanation for the gold label of an inference problem. In other words, instead of proving sentence-level inference relations with the help of lexical relations, the lexical relations are proved taking into account the sentence-level inference relations. We implement the learning method in a tableau theorem prover for natural language and show that it improves the performance of the theorem prover on the SICK dataset by 1.4\% while still maintaining high precision ({\textgreater}94\%). The obtained results are competitive with the state of the art among logic-based systems.},
+	urldate = {2021-03-02},
+	journal = {arXiv:2010.15909 [cs]},
+	month = {dec},
+	year = {2020},
+	note = {arXiv: 2010.15909},
+	keywords = {Computer Science - Computation and Language, I.2.7, 03B65, 68T50, F.4.1, I.2.3, I.2.6, K.3.2},
+	annote = {Comment: Presented at *SEM, see the official link https://www.aclweb.org/anthology/2020.starsem-1.3 The code available at https://github.com/kovvalsky/LangPro}
 },
 
 @book{adams_primer_1998,
@@ -972,6 +994,19 @@ by a built-in extraction procedure that removes this static information. We also
 	annote = {{\textless}p{\textgreater}* Conjectures that refactoring, synthesis and model-driven development will converge (but {NOT} \&quot;how\&quot; as the abstract says) * Review of these areas in the light of the conjecture{\textless}/p{\textgreater}}
 },
 
+@article{bauer_what_2019,
+	author = {Andrej Bauer},
+	title = {What is algebraic about algebraic effects and handlers?},
+	url = {http://arxiv.org/abs/1807.05923},
+	abstract = {This note recapitulates and expands the contents of a tutorial on the mathematical theory of algebraic effects and handlers which I gave at the Dagstuhl seminar 18172 "Algebraic effect handlers go mainstream". It is targeted roughly at the level of a doctoral student with some amount of mathematical training, or at anyone already familiar with algebraic effects and handlers as programming concepts who would like to know what they have to do with algebra. We draw an uninterrupted line of thought between algebra and computational effects. We begin on the mathematical side of things, by reviewing the classic notions of universal algebra: signatures, algebraic theories, and their models. We then generalize and adapt the theory so that it applies to computational effects. In the last step we replace traditional mathematical notation with one that is closer to programming languages.},
+	urldate = {2020-09-08},
+	journal = {arXiv:1807.05923 [cs]},
+	month = {mar},
+	year = {2019},
+	note = {arXiv: 1807.05923},
+	keywords = {08A70, Computer Science - Logic in Computer Science, Computer Science - Programming Languages}
+},
+
 @techreport{becker_working_2007,
 	author = {Pete Becker},
 	title = {Working Draft, Standard for Programming Language {\textbackslash}{\textbackslash}cpp},
@@ -1018,6 +1053,23 @@ by a built-in extraction procedure that removes this static information. We also
 	volume = {135},
 	number = {1},
 	pages = {11--65}
+},
+
+@inproceedings{beltagy_montague_2013,
+	author = {Islam Beltagy and Cuong Chau and Gemma Boleda and Dan Garrette and Katrin Erk and Raymond J. Mooney},
+	editor = {Mona T. Diab and
+               Timothy Baldwin and
+               Marco Baroni},
+	title = {Montague Meets Markov: Deep Semantics with Probabilistic Logical Form},
+	booktitle = {Proceedings of the Second Joint Conference on Lexical and Computational
+               Semantics, *SEM 2013, June 13-14, 2013, Atlanta, Georgia, {USA}},
+	pages = {11--21},
+	publisher = {Association for Computational Linguistics},
+	year = {2013},
+	url = {https://www.aclweb.org/anthology/S13-1002/},
+	timestamp = {Fri, 13 Sep 2019 13:08:46 +0200},
+	biburl = {https://dblp.org/rec/conf/starsem/BeltagyCBGEM13.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
 },
 
 @ARTICLE{bengio_neural_2003,
@@ -1419,8 +1471,11 @@ by a built-in extraction procedure that removes this static information. We also
 
 @inproceedings{bernardy_type-theoretical_2017,
 	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
-	title = {A Type-Theoretical system for the FraCaS test suite: Grammatical Framework meets Coq},
-	booktitle = {IWCS 2017-12th International Conference on Computational Semantics-Long papers},
+	title = {A Type-Theoretical system for the {FraCaS} test suite: Grammatical Framework meets Coq},
+	shorttitle = {A {Type}-{Theoretical} system for the {FraCaS} test suite},
+	url = {https://www.aclweb.org/anthology/W17-6801},
+	urldate = {2021-03-01},
+	booktitle = {{IWCS} 2017 - 12th {International} {Conference} on {Computational} {Semantics} - {Long} papers},
 	year = {2017}
 },
 
@@ -1454,12 +1509,16 @@ by a built-in extraction procedure that removes this static information. We also
 
 @inproceedings{bernardy_compositional_2018,
 	author = {Jean-Philippe Bernardy and Rasmus Blanck and Stergios Chatzikyriakidis and Shalom Lappin},
-	Booktitle = {Proceedings of the International Workshop on Language, 
-                     Cognition and Computational Models, COLING 2018, Santa Fe, 
-                     New Mexico},
+	address = {Santa Fe, New Mexico, USA},
 	Title = {A Compositional {Bayesian} Semantics for Natural Language},
-	Pages = {1--11},
-	Year = {2018}
+	url = {https://www.aclweb.org/anthology/W18-4101},
+	abstract = {We propose a compositional Bayesian semantics that interprets declarative sentences in a natural language by assigning them probability conditions. These are conditional probabilities that estimate the likelihood that a competent speaker would endorse an assertion, given certain hypotheses. Our semantics is implemented in a functional programming language. It estimates the marginal probability of a sentence through Markov Chain Monte Carlo (MCMC) sampling of objects in vector space models satisfying specified hypotheses. We apply our semantics to examples with several predicates and generalised quantifiers, including higher-order quantifiers. It captures the vagueness of predication (both gradable and non-gradable), without positing a precise boundary for classifier application. We present a basic account of semantic learning based on our semantic system. We compare our proposal to other current theories of probabilistic semantics, and we show that it offers several important advantages over these accounts.},
+	urldate = {2021-03-01},
+	booktitle = {Proceedings of the {First} {International} {Workshop} on {Language} {Cognition} and {Computational} {Models}},
+	publisher = {Association for Computational Linguistics},
+	month = {aug},
+	year = {2018},
+	pages = {1--10}
 },
 
 @article{bernardy_corpus_2018,
@@ -1497,27 +1556,30 @@ by a built-in extraction procedure that removes this static information. We also
 
 @inproceedings{bernardy_wide-coverage_2019,
 	author = {Jean-Philippe Bernardy and Stergios Chatzikyriakidis},
+	address = {Turku, Finland},
 	title = {A Wide-Coverage Symbolic Natural Language Inference System},
+	url = {https://www.aclweb.org/anthology/W19-6131},
+	abstract = {We present a system for Natural Language Inference which uses a dynamic semantics converter from abstract syntax trees to Coq types. It combines the fine-grainedness of a dynamic semantics system with the powerfulness of a state-of-the-art proof assistant, like Coq. We evaluate the system on all sections of the FraCaS test suite, excluding section 6. This is the first system that does a complete run on the anaphora and ellipsis sections of the FraCaS. It has a better overall accuracy than any previous system.},
+	urldate = {2021-03-01},
+	booktitle = {Proceedings of the 22nd {Nordic} {Conference} on {Computational} {Linguistics}},
+	publisher = {Linköping University Electronic Press},
+	month = {sep},
 	year = {2019},
-	booktitle = {Proceedings of the 22nd Nordic Conference on Computational Linguistics},
-	publisher = {ACL}
-},
-
-@inproceedings{bernardy_bayesian_2019,
-	author = {Jean-Philippe Bernardy and Rasmus Blanck and Stergios Chatzikyriakidis and Shalom Lappin and Aleksandre Maskharashvili},
-	Booktitle = {Proceedings of the Eighth Joint Conference on Lexical and Computational Semantics (*SEM), Minneapolis },
-	Title = {Bayesian Inference Semantics: A Modelling System and A Test Suite},
-	Year = {2019},
-	Pages = {263--272},
-	Publisher = {Association for Computational Linguistics}
+	pages = {298--303}
 },
 
 @inproceedings{bernardy_predicates_2019,
 	author = {Jean-Philippe Bernardy and Rasmus Blanck and Stergios Chatzikyriakidis and Shalom Lappin and Aleksandre Maskharashvili},
+	address = {Turku, Finland},
 	title = {Predicates as Boxes in Bayesian Semantics for Natural Language},
+	url = {https://www.aclweb.org/anthology/W19-6137},
+	abstract = {In this paper, we present a Bayesian approach to natural language semantics. Our main focus is on the inference task in an environment where judgments require probabilistic reasoning. We treat nouns, verbs, adjectives, etc. as unary predicates, and we model them as boxes in a bounded domain. We apply Bayesian learning to satisfy constraints expressed as premises. In this way we construct a model, by specifying boxes for the predicates. The probability of the hypothesis (the conclusion) is evaluated against the model that incorporates the premises as constraints.},
+	urldate = {2021-03-01},
+	booktitle = {Proceedings of the 22nd {Nordic} {Conference} on {Computational} {Linguistics}},
+	publisher = {Linköping University Electronic Press},
+	month = {sep},
 	year = {2019},
-	booktitle = {Proceedings of the 22nd Nordic Conference on Computational Linguistics},
-	publisher = {ACL}
+	pages = {333--337}
 },
 
 @inproceedings{bernardy_two_2019,
@@ -1533,6 +1595,22 @@ by a built-in extraction procedure that removes this static information. We also
 	title = {What Kind of Natural Language Inference are NLP Systems Learning: Is this Enough?},
 	booktitle = {Proceedings of the 13th International Conference on Agents and Artificial Intelligence},
 	year = {2019}
+},
+
+@inproceedings{bernardy_bayesian_2019,
+	author = {Jean-Philippe Bernardy and Rasmus Blanck and Stergios Chatzikyriakidis and Shalom Lappin and Aleksandre Maskharashvili},
+	address = {Minneapolis, Minnesota},
+	Title = {{Bayesian} Inference Semantics: A Modelling System and A Test Suite},
+	shorttitle = {Bayesian {Inference} {Semantics}},
+	url = {https://www.aclweb.org/anthology/S19-1029},
+	doi = {10.18653/v1/S19-1029},
+	abstract = {We present BIS, a Bayesian Inference Semantics, for probabilistic reasoning in natural language. The current system is based on the framework of Bernardy et al. (2018), but departs from it in important respects. BIS makes use of Bayesian learning for inferring a hypothesis from premises. This involves estimating the probability of the hypothesis, given the data supplied by the premises of an argument. It uses a syntactic parser to generate typed syntactic structures that serve as input to a model generation system. Sentences are interpreted compositionally to probabilistic programs, and the corresponding truth values are estimated using sampling methods. BIS successfully deals with various probabilistic semantic phenomena, including frequency adverbs, generalised quantifiers, generics, and vague predicates. It performs well on a number of interesting probabilistic reasoning tasks. It also sustains most classically valid inferences (instantiation, de Morgan's laws, etc.). To test BIS we have built an experimental test suite with examples of a range of probabilistic and classical inference patterns.},
+	urldate = {2021-03-01},
+	booktitle = {Proceedings of the {Eighth} {Joint} {Conference} on {Lexical} and {Computational} {Semantics} (*{SEM} 2019)},
+	publisher = {Association for Computational Linguistics},
+	month = {jun},
+	year = {2019},
+	pages = {263--272}
 },
 
 @article{bernardy_computational_2020,
@@ -1699,6 +1777,19 @@ by a built-in extraction procedure that removes this static information. We also
 	series = {Haskell 2018}
 },
 
+@book{blackburn_representation_2005,
+	author = {Patrick Blackburn and Johan Bos},
+	address = {Chicago},
+	series = {Studies in {Computational} {Linguistics}},
+	title = {Representation and {Inference} for {Natural} {Language}: {A} {First} {Course} in {Computational} {Semantics}},
+	isbn = {978-1-57586-496-9},
+	url = {https://press.uchicago.edu/ucp/books/book/distributed/R/bo3685980.html},
+	abstract = {How can computers distinguish the coherent from the unintelligible, recognize new information in a sentence, or draw inferences from a natural language passage? Computational semantics is an exciting new field that seeks answers to these questions, and this volume is the first textbook wholly devoted to this growing subdiscipline.  The book explains the underlying theoretical issues and fundamental techniques for computing semantic representations for fragments of natural language. This volume will be an essential text for computer scientists, linguists, and anyone interested in the development of computational semantics.},
+	urldate = {2021-03-02},
+	publisher = {University of Chicago Press},
+	year = {2005}
+},
+
 @InProceedings{blackburn_?separate_2006,
 	author = {P. Blackburn and J. Bos and M. Kohlhase and H. de Nivelle},
 	title = {?Separate Performative? Account of the German Right Dislocation,},
@@ -1768,20 +1859,17 @@ by a built-in extraction procedure that removes this static information. We also
 	year = {2013}
 },
 
-@InProceedings{bos_recognising_2005,
-	author = {J. Bos and K. Markert},
-	title = {Recognising textual
-entailment with logical inference},
-	booktitle = {Proc. of
-the 2005 Conference on Empirical Methods in Natural
-Language Processing (EMNLP),},
+@inproceedings{bos_recognising_2005,
+	author = {Johan Bos and Katja Markert},
+	address = {Vancouver, British Columbia, Canada},
+	title = {Recognising textual entailment with logical inference},
+	url = {https://www.aclweb.org/anthology/H05-1079},
+	urldate = {2021-03-01},
+	booktitle = {Proceedings of {Human} {Language} {Technology} {Conference} and {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	month = {oct},
 	year = {2005},
-	pages = {98-103},
-	OPTorganization = {},
-	OPTpublisher = {},
-	address = {},
-	OPTmonth = {},
-	OPTnote = {}
+	pages = {628--635}
 },
 
 @inproceedings{bos_wide-coverage_2008,
@@ -2386,6 +2474,16 @@ proof is directly performed for any ordered set and not only for Boolean values.
 	publisher = {Elsevier}
 },
 
+@book{chomsky_lectures_1981,
+	author = {Noam Chomsky},
+	address = {Dordrecht},
+	series = {Studies in {Generative} {Grammar}},
+	title = {Lectures on {Government} and {Binding}: {The} {Pisa} {Lectures}},
+	number = {9},
+	publisher = {Foris Publications},
+	year = {1981}
+},
+
 @misc{chomsky_purpose_2012,
 	author = {Noam Chomsky},
 	title = {The purpose of education},
@@ -2617,11 +2715,13 @@ nondeterminism and encapsulated search turn out to be elegant and powerful means
 },
 
 @TechReport{cooper_using_1996,
-	author = {R. Cooper and D. Crouch and J. van Eijck and C. Fox and J. van Genabith and J. Jaspars and H. Kamp and D. Milward and M. Pinkal and M. Poesio and S. Pulman},
+	author = {R. Cooper and D. Crouch and J. {van Eijck} and C. Fox and J. van Genabith and J. Jaspars and H. Kamp and D. Milward and M. Pinkal and M. Poesio and S. Pulman},
 	title = {Using the framework.},
 	type = {Technical Report {LRE 62-051r}},
 	year = {1996},
 	institution = {The FraCaS consortium},
+	abstract = {There are two major levels of processing that are significant in the use of a computational semantic framework: semantic composition for the construction of meanings; and inference either for the exploitation of those meanings, or to assist in determining contextually sensitive aspects of meaning. The first chapter of this deliverable outlines the semantic competences that are either required by --- or would improve the performance of --- a variety of different commercially relevant applications. Semantic composition and meaning construction is a core competence required by all applications, and inference is central to many. The second chapter takes the form of a manual describing the use of a program library and educational/research tool providing a concrete computational framework bringing together different types of semantic composition. The third chapter presents an inference test suite for evaluating the inferential competence of different NLP systems and semantic theories. Provid...},
+	number = {LRE 62-051 D-16},
 	note = {\url{ftp://ftp.cogsci.ed.ac.uk/pub/FRACAS/del16.ps.gz}.}
 },
 
@@ -2635,12 +2735,14 @@ nondeterminism and encapsulated search turn out to be elegant and powerful means
 	Year = {2014}
 },
 
-@article{cooper_probabilistic_2015,
-	author = {Robin Cooper and Simon Dobnik and Staffan Larsson and Shalom Lappin},
+@inproceedings{cooper_probabilistic_2015,
+	author = {Robin Cooper and Simon Dobnik and Shalom Lappin and Staffan Larsson},
 	title = {Probabilistic type theory and natural language semantics},
-	journal = {LiLT (Linguistic Issues in Language Technology)},
-	volume = {10},
-	pages = {1--43},
+	url = {https://www.aclweb.org/anthology/2015.lilt-10.4},
+	abstract = {Type theory has played an important role in specifying the formal connection between syntactic structure and semantic interpretation within the history of formal semantics. In recent years rich type theories developed for the semantics of programming languages have become influential in the semantics of natural language. The use of probabilistic reasoning to model human learning and cognition has become an increasingly important part of cognitive science. In this paper we offer a probabilistic formulation of a rich type theory, Type Theory with Records (TTR), and we illustrate how this framework can be used to approach the problem of semantic learning. Our probabilistic version of TTR is intended to provide an interface between the cognitive process of classifying situations according to the types that they instantiate, and the compositional semantics of natural language.},
+	urldate = {2021-03-01},
+	booktitle = {Linguistic {Issues} in {Language} {Technology}, {Volume} 10, 2015},
+	publisher = {CSLI Publications},
 	year = {2015}
 },
 
@@ -2753,6 +2855,11 @@ nondeterminism and encapsulated search turn out to be elegant and powerful means
 	booktitle = {Machine learning challenges. Evaluating predictive uncertainty, visual object classification, and recognising tectual entailment},
 	pages = {177--190},
 	year = {2006},
+	isbn = {978-3-540-33428-6},
+	editor = {Quiñonero-Candela, Joaquin and Dagan, Ido and Magnini, Bernardo and d’Alché-Buc, Florence},
+	keywords = {Information Extraction, Machine Translation, News Story, Question Answering, Reading Comprehension},
+	doi = {10.1007/11736790_9},
+	abstract = {This paper describes the PASCAL Network of Excellence first Recognising Textual Entailment (RTE-1) Challenge benchmark. The RTE task is defined as recognizing, given two text fragments, whether the meaning of one text can be inferred (entailed) from the other. This application-independent task is suggested as capturing major inferences about the variability of semantic expression which are commonly needed across multiple applications. The Challenge has raised noticeable attention in the research community, attracting 17 submissions from diverse groups, suggesting the generic relevance of the task.},
 	publisher = {Springer}
 },
 
@@ -2998,6 +3105,19 @@ nondeterminism and encapsulated search turn out to be elegant and powerful means
                   transitive closure}
 },
 
+@book{domingos_markov_2009,
+	author = {Pedro M. Domingos and Daniel Lowd},
+	title = {Markov Logic: An Interface Layer for Artificial Intelligence},
+	series = {Synthesis Lectures on Artificial Intelligence and Machine Learning},
+	publisher = {Morgan {\&} Claypool Publishers},
+	year = {2009},
+	url = {https://doi.org/10.2200/S00206ED1V01Y200907AIM007},
+	doi = {10.2200/S00206ED1V01Y200907AIM007},
+	timestamp = {Tue, 16 May 2017 14:24:20 +0200},
+	biburl = {https://dblp.org/rec/series/synthesis/2009Domingos.bib},
+	bibsource = {dblp computer science bibliography, https://dblp.org}
+},
+
 @book{dowty_introduction_1981,
 	author = {D. R. Dowty and R. E. Wall and S. Peters},
 	Address = {Dordrecht},
@@ -3208,10 +3328,15 @@ nondeterminism and encapsulated search turn out to be elegant and powerful means
 @article{emerson_variational_2017,
 	author = {Guy Emerson and Ann Copestake},
 	title = {Variational Inference for Logical Inference},
-	journal = {CoRR},
-	volume = {abs/1709.00224},
+	url = {http://arxiv.org/abs/1709.00224},
+	abstract = {Functional Distributional Semantics is a framework that aims to learn, from text, semantic representations which can be interpreted in terms of truth. Here we make two contributions to this framework. The first is to show how a type of logical inference can be performed by evaluating conditional probabilities. The second is to make these calculations tractable by means of a variational approximation. This approximation also enables faster convergence during training, allowing us to close the gap with state-of-the-art vector space models when evaluating on semantic similarity. We demonstrate promising performance on two tasks.},
+	urldate = {2021-03-01},
+	journal = {arXiv:1709.00224 [cs]},
+	month = {sep},
 	year = {2017},
-	url = {http://arxiv.org/abs/1709.00224}
+	note = {arXiv: 1709.00224},
+	keywords = {Computer Science - Computation and Language},
+	annote = {Comment: Conference on Logic and Machine Learning in Natural Language (LaML)}
 },
 
 @InProceedings{emoto_generate_2012,
@@ -4001,19 +4126,22 @@ Textual Entailment.},
 },
 
 @article{goodman_knowledge_2013,
-	author = {Noah D. Goodman and Andreas Stuhlm{\"{u}}ller},
-	title = {Knowledge and Implicature: Modeling Language Understanding as Social
-               Cognition},
-	journal = {Top. Cogn. Sci.},
+	author = {Noah D. Goodman and Andreas Stuhlmüller},
+	title = {Knowledge and Implicature: Modeling Language Understanding as Social Cognition},
 	volume = {5},
+	copyright = {Copyright © 2013 Cognitive Science Society, Inc.},
+	issn = {1756-8765},
+	shorttitle = {Knowledge and {Implicature}},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/tops.12007},
+	doi = {https://doi.org/10.1111/tops.12007},
+	abstract = {Is language understanding a special case of social cognition? To help evaluate this view, we can formalize it as the rational speech-act theory: Listeners assume that speakers choose their utterances approximately optimally, and listeners interpret an utterance by using Bayesian inference to “invert” this model of the speaker. We apply this framework to model scalar implicature (“some” implies “not all,” and “N” implies “not more than N”). This model predicts an interaction between the speaker's knowledge state and the listener's interpretation. We test these predictions in two experiments and find good fit between model predictions and human judgments.},
+	language = {en},
 	number = {1},
-	pages = {173--184},
+	urldate = {2021-01-19},
+	journal = {Topics in Cognitive Science},
 	year = {2013},
-	url = {https://doi.org/10.1111/tops.12007},
-	doi = {10.1111/tops.12007},
-	timestamp = {Thu, 01 Oct 2020 10:56:49 +0200},
-	biburl = {https://dblp.org/rec/journals/topics/GoodmanS13.bib},
-	bibsource = {dblp computer science bibliography, https://dblp.org}
+	keywords = {Bayesian model, Language, Scalar implicature},
+	pages = {173--184}
 },
 
 @misc{goodman_design_2014,
@@ -4033,6 +4161,23 @@ Textual Entailment.},
 	Title = {Probabilistic Semantics and Pragmatics: Uncertainty in Language and Thought},
 	Pages = {655--686},
 	Year = {2015}
+},
+
+@article{goodman_pragmatic_2016,
+	author = {Noah D. Goodman and Michael C. Frank},
+	title = {Pragmatic {Language} {Interpretation} as {Probabilistic} {Inference}},
+	volume = {20},
+	issn = {1364-6613},
+	url = {https://www.sciencedirect.com/science/article/pii/S136466131630122X},
+	doi = {10.1016/j.tics.2016.08.005},
+	abstract = {Understanding language requires more than the use of fixed conventions and more than decoding combinatorial structure. Instead, comprehenders make exquisitely sensitive inferences about what utterances mean given their knowledge of the speaker, language, and context. Building on developments in game theory and probabilistic modeling, we describe the rational speech act (RSA) framework for pragmatic reasoning. RSA models provide a principled way to formalize inferences about meaning in context; they have been used to make successful quantitative predictions about human behavior in a variety of different tasks and situations, and they explain why complex phenomena, such as hyperbole and vagueness, occur. More generally, they provide a computational framework for integrating linguistic structure, world knowledge, and context in pragmatic language understanding.},
+	language = {en},
+	number = {11},
+	urldate = {2021-02-11},
+	journal = {Trends in Cognitive Sciences},
+	month = {nov},
+	year = {2016},
+	pages = {818--829}
 },
 
 @misc{goossens_xetex_2010,
@@ -4101,6 +4246,33 @@ Textual Entailment.},
 	title = {{Concept{GCC}} --- a prototype compiler for {{\textbackslash}{\textbackslash}Cpp{}} concepts},
 	year = {2008},
 	keywords = {sibylle, wgp08}
+},
+
+@article{grice_meaning_1957,
+	author = {H. P. Grice},
+	title = {Meaning},
+	volume = {66},
+	issn = {0031-8108},
+	url = {http://www.jstor.org/stable/2182440},
+	doi = {10.2307/2182440},
+	number = {3},
+	urldate = {2021-02-20},
+	journal = {The Philosophical Review},
+	year = {1957},
+	note = {Publisher: [Duke University Press, Philosophical Review]},
+	pages = {377--388}
+},
+
+@incollection{grice_logic_1975,
+	author = {H. Paul Grice},
+	address = {New York},
+	title = {Logic and {Conversation}},
+	volume = {3, Speech Acts},
+	booktitle = {Syntax and {Semantics}},
+	publisher = {Academic Press},
+	editor = {Cole, Peter and Morgan, Jerry L.},
+	year = {1975},
+	pages = {41--58}
 },
 
 @article{grishin_nonstandard_1974,
@@ -4336,7 +4508,7 @@ and Luo, Zhaohui},
 	author = {A. Hickl and J. Williams and J. Bensley and K. Roberts and B. Rink and Y. Shi},
 	title = {Recognizing Textual Entailment with L{CC}'s
 GROUNDHOG System},
-	booktitle = {Proc. of Second PASCAL Challenges Workshop on Recognizing
+	booktitle = {Proc. of Second {PASCAL} Challenges Workshop on Recognizing
 Textual Entailment},
 	year = {2005},
 	pages = {80-85},
@@ -5070,6 +5242,18 @@ foundation for programming with nested types in Haskell.},
 	bibsource = {dblp computer science bibliography, http://dblp.org}
 },
 
+@book{jurafsky_speech_2000,
+	author = {Daniel Jurafsky and James H. Martin},
+	address = {USA},
+	edition = {1st},
+	title = {Speech and {Language} {Processing}: {An} {Introduction} to {Natural} {Language} {Processing}, {Computational} {Linguistics}, and {Speech} {Recognition}},
+	isbn = {978-0-13-095069-7},
+	shorttitle = {Speech and {Language} {Processing}},
+	abstract = {From the Publisher: This book takes an empirical approach to language processing, based on applying statistical and other machine-learning algorithms to large corpora. Methodology boxes are included in each chapter. Each chapter is built around one or more worked examples to demonstrate the main idea of the chapter. Covers the fundamental algorithms of various fields, whether originally proposed for spoken or written language to demonstrate how the same algorithm can be used for speech recognition and word-sense disambiguation. Emphasis on web and other practical applications. Emphasis on scientific evaluation. Useful as a reference for professionals in any of the areas of speech and language processing.},
+	publisher = {Prentice Hall PTR},
+	year = {2000}
+},
+
 @inproceedings{jurczyk_selqa_2016,
 	author = {Tomasz Jurczyk and Michael Zhai and Jinho D Choi},
 	title = {Selqa: A new benchmark for selection-based question answering},
@@ -5714,6 +5898,18 @@ foundation for programming with nested types in Haskell.},
 	year = {2009}
 },
 
+@article{lappin_algorithm_1994,
+	author = {Shalom Lappin and Herbert J. Leass},
+	title = {An {Algorithm} for {Pronominal} {Anaphora} {Resolution}},
+	volume = {20},
+	url = {https://www.aclweb.org/anthology/J94-4002},
+	number = {4},
+	urldate = {2021-02-21},
+	journal = {Computational Linguistics},
+	year = {1994},
+	pages = {535--561}
+},
+
 @InCollection{lappin_curry_2015,
 	author = {Shalom Lappin},
 	editor = {Shalom Lappin and Chris Fox},
@@ -5734,6 +5930,39 @@ foundation for programming with nested types in Haskell.},
 	year = {2018}
 },
 
+@article{lassiter_presuppositions_2012,
+	author = {Daniel Lassiter},
+	title = {Presuppositions, provisos, and probability},
+	volume = {5},
+	doi = {10.3765/sp.5.2},
+	number = {2},
+	journal = {Semantics and Pragmatics},
+	month = {may},
+	year = {2012},
+	keywords = {Bayesian pragmatics, conditionals, Presupposition, probability, proviso problem},
+	pages = {1--37}
+},
+
+@article{lassiter_context_2013,
+	author = {Daniel Lassiter and Noah D. Goodman},
+	title = {Context, scale structure, and statistics in the interpretation of positive-form adjectives},
+	volume = {23},
+	copyright = {Copyright (c)},
+	issn = {2163-5951},
+	url = {https://journals.linguisticsociety.org/proceedings/index.php/SALT/article/view/2658},
+	doi = {10.3765/salt.v23i0.2658},
+	abstract = {Relative adjectives in the positive form exhibit vagueness and context-sensitivity. We suggest that these phenomena can be explained by the interaction of a free threshold variable in the meaning of the positive form with a probabilistic model of pragmatic inference. We describe a formal model of utterance interpretation as coordination, which jointly infers the value of the threshold variable and the intended meaning of the sentence. We report simulations exploring the effect of background statistical knowledge on adjective interpretation in this model. Motivated by these simulation results, we suggest that this approach can account for the correlation between scale structure and the relative/absolute distinction while also allowing for exceptions noted in previous work. Finally, we argue for a probabilistic explanation of why the sorites paradox is compelling with relative adjectives even though the second premise is false on a universal interpretation, and show that this account predicts Kennedyâ€™s (2007) observation that the sorites paradox is more compelling with relative than with absolute adjectives.},
+	language = {en-US},
+	number = {0},
+	urldate = {2021-02-11},
+	journal = {Semantics and Linguistic Theory},
+	month = {aug},
+	year = {2013},
+	note = {Number: 0},
+	keywords = {Bayesian pragmatics, probability, absolute adjectives, coordination games, Relative adjectives, sorites, vagueness},
+	pages = {587--610}
+},
+
 @incollection{lassiter_adjectival_2015,
 	author = {D. Lassiter},
 	Address = {Malden, Oxford},
@@ -5746,12 +5975,20 @@ foundation for programming with nested types in Haskell.},
 },
 
 @article{lassiter_adjectival_2017,
-	author = {Daniel Lassiter and Noah Goodman},
-	Journal = {Synthese},
-	Pages = {3801--3836},
-	Title = {Adjectival Vagueness in a {Bayesian} Model of Interpretation},
-	Volume = {194},
-	Year = {2017}
+	author = {Daniel Lassiter and Noah D. Goodman},
+	title = {Adjectival vagueness in a {Bayesian} model of interpretation},
+	volume = {194},
+	issn = {1573-0964},
+	url = {https://doi.org/10.1007/s11229-015-0786-1},
+	doi = {10.1007/s11229-015-0786-1},
+	abstract = {We derive a probabilistic account of the vagueness and context-sensitivity of scalar adjectives from a Bayesian approach to communication and interpretation. We describe an iterated-reasoning architecture for pragmatic interpretation and illustrate it with a simple scalar implicature example. We then show how to enrich the apparatus to handle pragmatic reasoning about the values of free variables, explore its predictions about the interpretation of scalar adjectives, and show how this model implements Edgington’s (Analysis 2:193–204,1992, Keefe and Smith (eds.) Vagueness: a reader,  1997) account of the sorites paradox, with variations. The Bayesian approach has a number of explanatory virtues: in particular, it does not require any special-purpose machinery for handling vagueness, and it is integrated with a promising new approach to pragmatics and other areas of cognitive science.},
+	language = {en},
+	number = {10},
+	urldate = {2021-02-11},
+	journal = {Synthese},
+	month = {oct},
+	year = {2017},
+	pages = {3801--3836}
 },
 
 @phdthesis{lattner_llvm_2002,
@@ -6325,6 +6562,14 @@ well.}
 	bibsource = {dblp computer science bibliography, https://dblp.org}
 },
 
+@book{marr_vision_1982,
+	author = {David Marr},
+	address = {Cambridge},
+	title = {Vision: {A} {Computational} {Investigation} into the {Human} {Representation} and {Processing} of {Visual} {Information}},
+	publisher = {MIT Press},
+	year = {1982}
+},
+
 @inproceedings{martin_hyperintensional_2012,
 	author = {Scott Martin and Carl Pollard},
 	title = {Hyperintensional Dynamic Semantics},
@@ -6603,11 +6848,18 @@ well.}
 	publisher = {MIT press}
 },
 
-@Inproceedings{mineshima_higher-order_2015,
-	author = {Koji Mineshima and Yusuke Miyao and Daisuke Bekki},
+@inproceedings{mineshima_higher-order_2015,
+	author = {Koji Mineshima and Pascual Martínez-Gómez and Yusuke Miyao and Daisuke Bekki},
+	address = {Lisbon, Portugal},
 	title = {Higher-order logical inference with compositional semantics},
-	booktitle = {Proceedings of EMNLP},
-	year = {2015}
+	url = {https://www.aclweb.org/anthology/D15-1244},
+	doi = {10.18653/v1/D15-1244},
+	urldate = {2021-03-01},
+	booktitle = {Proceedings of the 2015 {Conference} on {Empirical} {Methods} in {Natural} {Language} {Processing}},
+	publisher = {Association for Computational Linguistics},
+	month = {sep},
+	year = {2015},
+	pages = {2055--2061}
 },
 
 @phdthesis{miquel_calcul_2001,
@@ -6723,13 +6975,38 @@ well.}
 	editor = {B. Visentini et al.}
 },
 
+@article{montague_universal_1970,
+	author = {Richard Montague},
+	title = {Universal grammar},
+	volume = {36},
+	issn = {1755-2567},
+	url = {https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1755-2567.1970.tb00434.x},
+	doi = {10.1111/j.1755-2567.1970.tb00434.x},
+	language = {en},
+	number = {3},
+	urldate = {2020-10-26},
+	journal = {Theoria},
+	year = {1970},
+	pages = {373--398}
+},
+
 @incollection{montague_proper_1973,
 	author = {Richard Montague},
+	address = {Dordrecht},
+	series = {Synthese {Library}},
 	title = {The proper treatment of quantification in ordinary English},
-	booktitle = {Approaches to natural language},
-	pages = {221--242},
+	isbn = {978-94-010-2506-5},
+	url = {https://doi.org/10.1007/978-94-010-2506-5_10},
+	abstract = {The aim of this paper is to present in a rigorous way the syntax and semantics of a certain fragment of a certain dialect of English. For expository purposes the fragment has been made as simple and restricted as it can be while accommodating all the more puzzling cases of quantification and reference with which I am acquainted.1},
+	language = {en},
+	urldate = {2020-10-24},
+	booktitle = {Approaches to {Natural} {Language}: {Proceedings} of the 1970 {Stanford} {Workshop} on {Grammar} and {Semantics}},
+	publisher = {Springer Netherlands},
+	editor = {Hintikka, K. J. J. and Moravcsik, J. M. E. and Suppes, P.},
 	year = {1973},
-	publisher = {Springer},
+	doi = {10.1007/978-94-010-2506-5_10},
+	keywords = {Common Noun, English Sentence, Individual Concept, Recursive Definition, Syntactic Rule},
+	pages = {221--242},
 	see = {:montague_proper_1974}
 },
 
@@ -7054,6 +7331,20 @@ well.}
 	timestamp = {Mon, 21 Oct 2019 15:15:21 +0200},
 	biburl = {https://dblp.org/rec/journals/pacmpl/OrchardLE19.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org}
+},
+
+@inproceedings{orita_discourse_2015,
+	author = {Naho Orita and Eliana Vornov and Naomi Feldman and Hal Daumé III},
+	address = {Beijing, China},
+	title = {Why discourse affects speakers' choice of referring expressions},
+	url = {https://www.aclweb.org/anthology/P15-1158},
+	doi = {10.3115/v1/P15-1158},
+	urldate = {2021-03-06},
+	booktitle = {Proceedings of the 53rd {Annual} {Meeting} of the {Association} for {Computational} {Linguistics} and the 7th {International} {Joint} {Conference} on {Natural} {Language} {Processing} ({Volume} 1: {Long} {Papers})},
+	publisher = {Association for Computational Linguistics},
+	month = {jul},
+	year = {2015},
+	pages = {1639--1649}
 },
 
 @inproceedings{oury_power_2008,
@@ -7397,20 +7688,38 @@ F
 	pages = {361–375}
 },
 
+@article{plotkin_semantics_2001,
+	author = {Gordon Plotkin and John Power},
+	series = {{MFPS} 2001,{Seventeenth} {Conference} on the {Mathematical} {Foundations} of {Programming} {Semantics}},
+	title = {Semantics for {Algebraic} {Operations}},
+	volume = {45},
+	issn = {1571-0661},
+	url = {http://www.sciencedirect.com/science/article/pii/S1571066104809708},
+	doi = {10.1016/S1571-0661(04)80970-8},
+	abstract = {Given a category C with finite products and a strong monad T on C, we investigate axioms under which an ObC-indexed family of operations of the form αx:(Tx)n → Tx provides a definitive semantics for algebraic operations added to the computational λ-calculus. We recall a definition for which we have elsewhere given adequacy results for both big and small step operational semantics, and we show that it is equivalent to a range of other possible natural definitions of algebraic operation. We outline examples and non-examples and we show that our definition is equivalent to one for call-by-name languages with effects, too.},
+	language = {en},
+	urldate = {2020-10-27},
+	journal = {Electronic Notes in Theoretical Computer Science},
+	month = {nov},
+	year = {2001},
+	pages = {332--345}
+},
+
 @inproceedings{plotkin_handlers_2009,
 	author = {Gordon Plotkin and Matija Pretnar},
+	address = {Berlin, Heidelberg},
+	series = {Lecture {Notes} in {Computer} {Science}},
 	title = {Handlers of Algebraic Effects},
-	booktitle = {Proceedings of the 18th European Symposium on Programming Languages and Systems: Held As Part of the Joint European Conferences on Theory and Practice of Software, ETAPS 2009},
-	series = {ESOP '09},
-	year = {2009},
-	isbn = {978-3-642-00589-3},
-	location = {York, UK},
-	pages = {80--94},
-	numpages = {15},
+	isbn = {978-3-642-00590-9},
 	doi = {10.1007/978-3-642-00590-9_7},
-	acmid = {1532984},
-	publisher = {Springer-Verlag},
-	address = {Berlin, Heidelberg}
+	abstract = {We present an algebraic treatment of exception handlers and, more generally, introduce handlers for other computational effects representable by an algebraic theory. These include nondeterminism, interactive input/output, concurrency, state, time, and their combinations; in all cases the computation monad is the free-model monad of the theory. Each such handler corresponds to a model of the theory for the effects at hand. The handling construct, which applies a handler to a computation, is based on the one introduced by Benton and Kennedy, and is interpreted using the homomorphism induced by the universal property of the free model. This general construct can be used to describe previously unrelated concepts from both theory and practice.},
+	language = {en},
+	booktitle = {Programming {Languages} and {Systems}},
+	publisher = {Springer},
+	editor = {Castagna, Giuseppe},
+	year = {2009},
+	keywords = {Algebraic Theory, Base Signature, Base Type, Function Symbol, Relation Symbol},
+	pages = {80--94}
 },
 
 @article{plotkin_handling_2013,
@@ -7608,6 +7917,21 @@ F
 	year = {2018}
 },
 
+@inproceedings{raina_robust_2005,
+	author = {Rajat Raina and Andrew Y. Ng and Christopher D. Manning},
+	address = {Pittsburgh, Pennsylvania},
+	series = {{AAAI}'05},
+	title = {Robust textual inference via learning and abductive reasoning},
+	isbn = {978-1-57735-236-5},
+	abstract = {We present a system for textual inference (the task of inferring whether a sentence follows from another text) that uses learning and a logical-formula semantic representation of the text. More precisely, our system begins by parsing and then transforming sentences into a logical formula-like representation similar to the one used by (Harabagiu et al., 2000). An abductive theorem prover then tries to find the minimum "cost" set of assumptions necessary to show that one statement follows from the other. These costs reflect how likely different assumptions are, and are learned automatically using information from syntactic/semantic features and from linguistic resources such as WordNet. If one sentence follows from the other given only highly plausible, low cost assumptions, then we conclude that it can be inferred. Our approach can be viewed as combining statistical machine learning and classical logical reasoning, in the hope of marrying the robustness and scalability of learning with the preciseness and elegance of logical theorem proving. We give experimental results from the recent PASCAL RTE 2005 challenge competition on recognizing textual inferences, where a system using this inference algorithm achieved the highest confidence weighted score.},
+	urldate = {2021-03-02},
+	booktitle = {Proceedings of the 20th national conference on {Artificial} intelligence - {Volume} 3},
+	publisher = {AAAI Press},
+	month = {jul},
+	year = {2005},
+	pages = {1099--1105}
+},
+
 @inproceedings{ramsey_algebraic_2001,
 	author = {Norman Ramsey and Elöd Csirmaz},
 	file = {:/home/bernardy/Papers/An algebraic approach to file synchronization-2001.pdf:pdf},
@@ -7641,8 +7965,15 @@ F
 
 @book{ranta_grammatical_2011,
 	author = {Aarne Ranta},
-	title = {Grammatical framework: Programming with multilingual grammars},
+	title = {Grammatical {Framework}: Programming with multilingual grammars},
 	year = {2011},
+	isbn = {1-57586-626-9},
+	url = {http://www.grammaticalframework.org/gf-book/},
+	abstract = {Grammars of natural languages are complex systems, and their computer implementation requires both programming skills and linguistic knowledge, especially when dealing with other languages than English. This book makes such tasks accessible for a wide range of programmers. It introduces GF (Grammatical Framework), which is a programming language designed for writing grammars, which may moreover address several languages in parallel. The book shows how to write grammars in GF and use them in applications such as tourist phrasebooks, spoken dialogue systems, and natural language interfaces. The examples and exercises address several languages, and the readers are guided to look at their own languages from the computational perspective.
+
+With an emphasis on good engineering, the book promotes modularity and division of labour - in particular, the use of libraries. It introduces the GF Resource Grammar Library, which currently addresses 16 languages. This number is constantly growing due to contributions from the international GF community. The library makes it painless to build applications and to port them to new languages. The book introduces a wide range of such applications, which run on platforms ranging from web servers to mobile phones. But the book also gives guidance for those readers who want to understand the underlying linguistics and implement resource grammars for new languages.
+
+The book starts with a hands-on tutorial, continues with a selection of advanced topics, and ends with a complete reference manual of GF. Requiring very little background knowledge, it is accessible for second-year students that have experience with computers and an interest for languages. At the same time, its novel and advanced material makes it interesting for senior researchers in computer science, linguistics, and related fields.},
 	publisher = {CSLI Publications}
 },
 
@@ -7672,6 +8003,20 @@ F
 	timestamp = {Tue, 06 Nov 2018 16:59:25 +0100},
 	biburl = {https://dblp.org/rec/bib/conf/icfp/ReedP10},
 	bibsource = {dblp computer science bibliography, https://dblp.org}
+},
+
+@phdthesis{reinhart_syntactic_1976,
+	author = {Tanya Miriam Reinhart},
+	type = {Thesis},
+	title = {The syntactic domain of anaphora},
+	copyright = {M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.},
+	url = {https://dspace.mit.edu/handle/1721.1/16400},
+	abstract = {Thesis. 1976. Ph.D.--Massachusetts Institute of Technology. Dept. of Foreign Literatures and Linguistics.},
+	language = {eng},
+	urldate = {2021-03-06},
+	school = {Massachusetts Institute of Technology},
+	year = {1976},
+	note = {Accepted: 2005-08-02T20:38:55Z}
 },
 
 @InProceedings{retore_montagovian_2013,
@@ -8375,11 +8720,36 @@ and proving by way of examples.},
 	booktitle = {Aspects of Inductive Logic}
 },
 
-@Article{sutton_probabilistic_2017,
+@article{sutton_vagueness_2016,
+	author = {Peter R. Sutton and Hana Filip},
+	title = {Vagueness, {Overlap}, and {Countability}},
+	volume = {20},
+	copyright = {Copyright (c) 2019 Peter R. Sutton, Hana Filip},
+	issn = {2629-6055},
+	url = {https://ojs.ub.uni-konstanz.de/sub/index.php/sub/article/view/292},
+	abstract = {We propose a novel semantic analysis of the mass/count distinction, within a new framework combining the theory of mereology with Probabilistic Type Theory with Records, Prob-TTR (Cooper et al. 2014)). While the notions akin to VAGUENESS (Chierchia 2010) and OVERLAP (Landman 2011) are needed to ground this distinction, neither on its own is sufficient to accommodate the whole range of data, especially the puzzling intra- and crosslinguistic variation in count vs. mass encoding. This variation becomes tractable, if we generally treat the grammatical differences between mass and count nouns as following from the interaction of two notions: namely, VAGUENESS sharpened in terms of graded (probabilistic) type judgements, and DISJOINTNESS relative to a probability threshold. As a result, in the form-denotation mappings, this leads us to a novel semantic classification of nouns into four classes. The mass/count distinction is a bipartite grammatical distinction manifested in the standard diagnostics like a direct combination with numerals, the indefinite article and quantifiers like every, much, among others.},
+	language = {en},
+	urldate = {2021-03-06},
+	journal = {Proceedings of Sinn und Bedeutung},
+	year = {2016},
+	pages = {730--747}
+},
+
+@Article{sutton_probabilistic_2018,
 	author = {Peter R. Sutton},
 	title = {Probabilistic Approaches to Vagueness and Semantic Competency},
+	volume = {83},
+	issn = {1572-8420},
+	url = {https://doi.org/10.1007/s10670-017-9910-6},
+	doi = {10.1007/s10670-017-9910-6},
+	abstract = {Wright (Synthese 30:325–365, 1975) holds that the following two theses are jointly incoherent: (T1) Rules determine correct language use. (T2) These rules are discoverable via internal reflection on language use.I argue that incoherence is derivable from (T1) alone and examine two types of probabilistic accounts that model a modification of (T1), one in terms of inexact knowledge, the other in terms of viewing semantic rules as reasons for linguistic actions. Both accommodate tolerance by breaking the link between justified assertion and truth, but incoherence threatens their conception of justified assertion (the ‘relocation problem’). I argue that the rules-as-reasons approach can relocate sharp boundaries to a place where they are not only more tolerable, but to be expected.},
+	language = {en},
+	number = {4},
+	urldate = {2021-03-01},
 	journal = {Erkenntnis},
-	year = {2017}
+	month = {aug},
+	year = {2018},
+	pages = {711--740}
 },
 
 @inproceedings{svenningsson_shortcut_2002,
@@ -9698,14 +10068,32 @@ worse. The trade-off is that partiality has consequences when dealing with ill-f
 	organization = {Elsevier}
 },
 
+@book{van_eijck_computational_2010,
+	author = {Jan {van Eijck} and Christina Unger},
+	address = {Cambridge},
+	title = {Computational {Semantics} with {Functional} {Programming}},
+	isbn = {978-0-521-76030-0},
+	url = {https://www.cambridge.org/core/books/computational-semantics-with-functional-programming/0D3BAC27C39751AE4FF7F08FCC1C1364},
+	abstract = {Computational semantics is the art and science of computing meaning in natural language. The meaning of a sentence is derived from the meanings of the individual words in it, and this process can be made so precise that it can be implemented on a computer. Designed for students of linguistics, computer science, logic and philosophy, this comprehensive text shows how to compute meaning using the functional programming language Haskell. It deals with both denotational meaning (where meaning comes from knowing the conditions of truth in situations), and operational meaning (where meaning is an instruction for performing cognitive action). Including a discussion of recent developments in logic, it will be invaluable to linguistics students wanting to apply logic to their studies, logic students wishing to learn how their subject can be applied to linguistics, and functional programmers interested in natural language processing as a new application area.},
+	urldate = {2021-02-20},
+	publisher = {Cambridge University Press},
+	year = {2010},
+	doi = {10.1017/CBO9780511778377}
+},
+
 @incollection{van_eijck_probabilistic_2012,
-	author = {J. {van Eijck} and S. Lappin},
+	author = {Jan {van Eijck} and Shalom Lappin},
 	Address = {University of Amsterdam},
 	Booktitle = {Logic and Interactive Rationality (LIRA), Volume 2},
 	Editor = {Z. Christoff and P. Galeazzi and N. Gierasimszuk and A. Marcoci and S. Smets},
 	Publisher = {ILLC},
 	Title = {Probabilistic Semantics for Natural Language},
-	Year = {2012}
+	abstract = {Probabilistic and stochastic methods have been fruitfully applied to a widevariety of problems in grammar induction,  natural language processing, and cognitive modeling. In this paper we explore the possibility of developing a class of combinatorial semantic representations for natural languages that compute the semantic value of a (declarative) sentence as a probabilityvalue which expresses the likelihood of competent speakers of the languageaccepting the sentence as true in a given model, relative to a specificationof the world.  Such an approach to semantic representation treats the pervasive gradience of semantic properties as intrinsic to speakers’ linguisticknowledge, rather than the result of the interference of performance factors in processing and interpretation. In order for this research program to succeed, it must solve three central problems.  First, it needs to formulatea type system that computes the probability value of a sentence from thesemantic values of its syntactic constituents. Second, it must incorporate aviable probabilistic logic into the representation of semantic knowledge inorder to model meaning entailment. Finally, it must show how the specifiedclass of semantic representations can be efficiently learned.  We construct a probabilistic semantic fragment and consider how the approach that the fragment instantiates addresses each of these three issues.},
+	booktitle = {Logic and interactive rationality ({LIRA})},
+	publisher = {Citeseer},
+	editor = {Christoff, Zo{\textbackslash}'e and Galeazzi, Paolo and Gierasimczuk, Nina and Marcoci, Alexandru and Smets, Sonya},
+	year = {2012},
+	pages = {17--35}
 },
 
 @misc{the_coq_development_team_coq_2010,
