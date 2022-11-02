@@ -1,3 +1,7 @@
+\newcommand{\sqdiamond}{\mathbin{\text{\tikz [x=1ex,y=1ex,line width=.1ex,line join=round] \draw (0,0) rectangle (1,1) (0,.5) -- (.5,1) -- (1,.5) -- (.5,0) -- (0,.5) -- cycle;}}}
+\newcommand{\varsqdiamond}{\mathbin{\text{\tikz [x=1ex,y=1ex,line width=.1ex,line join=round] \draw (0,0) rectangle (1,1) (.5\pgflinewidth,.5) -- (.5,1ex-.5\pgflinewidth) -- (1ex-.5\pgflinewidth,.5) -- (.5,.5\pgflinewidth) -- (.5\pgflinewidth,.5) -- cycle;}}}
+\newcommand{\varsquare}{\mathbin{\text{\tikz [x=1ex,y=1ex,line width=.1ex,line join=round] \draw (0,0) rectangle (1,1);}}}
+
 % \newunicodechar{ϕ}{\ensuremath{\mathnormal{\varphi}}} % 
 \newunicodechar{ }{\,}
 \newunicodechar{¬}{\ensuremath{\neg}} % 
@@ -108,7 +112,7 @@
 \newunicodechar{∝}{\propto}
 \newunicodechar{∞}{\ensuremath{\infty}} % 
 \newunicodechar{∣}{\ensuremath{\mid}} % 
-\newunicodechar{∧}{\wedge}% 
+\newunicodechar{∧}{\ensuremath{\wedge}}% 
 \newunicodechar{∨}{\vee}% 
 \newunicodechar{∩}{\ensuremath{\cap}} % 
 \newunicodechar{∪}{\ensuremath{\cup}} % 
@@ -155,7 +159,7 @@
 \newunicodechar{⋯}{\ensuremath{\cdots}} % 
 \newunicodechar{─}{---}
 \newunicodechar{■}{\ensuremath{\blacksquare}} % black square
-\newunicodechar{□}{\ensuremath{\square}} % 
+\newunicodechar{□}{\ensuremath{\varsquare}} % 
 \newunicodechar{▴}{\ensuremath{\blacktriangledown}}
 \newunicodechar{▵}{\ensuremath{\triangle}}
 \newunicodechar{▹}{\ensuremath{\triangleright}} % 
@@ -165,10 +169,11 @@
 \newunicodechar{◃}{\ensuremath{\triangleleft}}
 \newunicodechar{◅}{\ensuremath{\lhd}}
 \newunicodechar{◇}{\ensuremath{\diamond}} % 
-\newunicodechar{◽}{\ensuremath{\square}}
+\newunicodechar{◽}{\ensuremath{\varsquare}}
 \newunicodechar{★}{\ensuremath{\star}}   %
 \newunicodechar{♭}{\ensuremath{\flat}} % 
 \newunicodechar{♯}{\ensuremath{\sharp}} % 
+\newunicodechar{⛋}{\ensuremath{\varsqdiamond}} % 
 \newunicodechar{✓}{\ensuremath{\checkmark}} % 
 \newunicodechar{⟂}{\ensuremath{^\bot}} % PERPENDICULAR 
 \newunicodechar{⟦}{\ensuremath{\llbracket}}
@@ -180,8 +185,8 @@
 \newunicodechar{⟹}{\ensuremath{\Longrightarrow}} % 
 \newunicodechar{⦇}{\rlparenthesis}
 \newunicodechar{⦈}{\llparenthesis}
-\newunicodechar{⪆}{\ensuremath{\gtrapprox}}
 \newunicodechar{⪅}{\ensuremath{\lessapprox}}
+\newunicodechar{⪆}{\ensuremath{\gtrapprox}}
 \newunicodechar{ⱼ}{_j} % 
 \newunicodechar{𝒟}{\ensuremath{\mathcal{D}}} % 
 \newunicodechar{𝒢}{\ensuremath{\mathcal{G}}}
