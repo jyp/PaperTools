@@ -13,7 +13,13 @@
 \newcommand{\varsqdiamond}{\mathbin{\text{\tikz [x=1ex,y=1ex,line width=.1ex,line join=round] \draw (0,0) rectangle (1,1) (.5\pgflinewidth,.5) -- (.5,1ex-.5\pgflinewidth) -- (1ex-.5\pgflinewidth,.5) -- (.5,.5\pgflinewidth) -- (.5\pgflinewidth,.5) -- cycle;}}}
 \newcommand{\varsquare}{\mathbin{\text{\tikz [x=1ex,y=1ex,line width=.1ex,line join=round] \draw (0,0) rectangle (1,1);}}}
 \newcommand{\smalltriangleleft}{\mathbin{\text{\tikz [baseline={([yshift=-\axisht]current bounding box.center)},x=1ex,y=1ex,line width=.1ex] \draw (0,0.3) -- (-0.52,0) -- (0,-0.3) -- cycle;}}}
+
 \def\axisht{\dimexpr.5\fontcharht\font`)-.5\fontchardp\font`)\relax} % https://tex.stackexchange.com/questions/386288
+\def\doubleequals{\mathrel{\unitlength 0.01em
+  \begin{picture}(78,40)
+    \put(7,34){\line(1,0){25}} \put(45,34){\line(1,0){25}}
+    \put(7,14){\line(1,0){25}} \put(45,14){\line(1,0){25}}
+  \end{picture}}}
 
 % \newunicodechar{ϕ}{\ensuremath{\mathnormal{\varphi}}} % 
 \newunicodechar{ }{\,}
