@@ -2,12 +2,12 @@
 % Some credits
 %
 
-\def\easychairstyleauthor{easychair class style, by Serguei A. Mokhov, with changes by Andrei Voronkov <30 December 2011>}
-\def\easychairstylerevision{CVS Revision: $Id: easychair.cls,v 3.4 2012/12/30 11:41:23 voronkov Exp $}
+\def\easychairstyleauthor{easychair class style, by Serguei A. Mokhov and Andrei Voronkov <10 December 2015>}
+\def\easychairstylerevision{CVS Revision: $Id: easychair.cls,v 3.4 2017/03/26 09:52 voronkov Exp $}
 \def\easychairstylepurpose{Designed for easyChair.org, under guidelines and suggestions of}
 \def\easychairstylevoronkov{\space\space\space\space\space\space\space\space\space\space\space\space\space Andrei Voronkov <www.voronkov.com>, and}
 \def\easychairstylesutcliffe{\space\space\space\space\space\space\space\space\space\space\space\space\space Geoff Sutcliffe <www.cs.miami.edu/^geoff>}
-\def\easychairstylecopyright{Copyright terms are that of EasyChair.org}
+\def\easychairstylecopyright{Copyright terms are that of easychair.org}
 \def\easychairstylebugs{For bug reports, please contact <andrei@voronkov.com>}
 
 \everyjob{\typeout{\easychairstyleauthor}}
@@ -31,12 +31,12 @@
 %
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{easychair}[2011/05/02 v3.4]
+\ProvidesClass{easychair}[2017/03/26 v3.5]
 \def\@tempa#1#2\@nil{\edef\@classname{#1}}
 \expandafter\@tempa\@currnamestack{}{}{}\@nil
 \ifx\@classname\@empty \edef\@classname{\@currname}\fi
 
-\RequirePackage{color}
+\RequirePackage{xcolor}
 
 %
 % Debug
@@ -49,18 +49,26 @@
 \debugfalse
 \DeclareOption{debug}{\debugtrue}
 
-\newif\ifprocedia
-\procediafalse
-\DeclareOption{procedia}{\procediatrue}
+\newif\ifEPiC
+\EPiCfalse
+\DeclareOption{EPiC}{\EPiCtrue}
+\newif\ifKalpa
+\Kalpafalse
+\DeclareOption{Kalpa}{\Kalpatrue}
 
-% Procedia with the empty header
-\newif\ifprocediaempty
-\procediaemptyfalse
-\DeclareOption{procediaempty}{\procediaemptytrue}
+% EPiC with the empty header
+\newif\ifEPiCempty
+\EPiCemptyfalse
+\DeclareOption{EPiCempty}{\EPiCemptytrue}
 
-\newif\ifprocediafinal
-\procediafinalfalse
-\DeclareOption{procediafinal}{\procediafinaltrue}
+% Kalpa with the empty header
+\newif\ifKalpaempty
+\Kalpaemptyfalse
+\DeclareOption{Kalpaempty}{\Kalpa emptytrue}
+
+\newif\ifEPiCfinal
+\EPiCfinalfalse
+\DeclareOption{EPiCfinal}{\EPiCfinaltrue}
 
 \def\easychairframe#1{\gdef\@EasyFrame{#1}}
 \def\@EasyFrame{}
@@ -111,7 +119,7 @@
 \DeclareOption{withtimes}{\withtimestrue}
 
 
-%% Code added to use llncs style author list 
+%% Code added to use llncs style author list
 \newcounter{@inst}
 \newcounter{@auth}
 \newcounter{auco}
@@ -141,7 +149,7 @@
 \def\fnmsep{\unskip$^,$}
 \def\email#1{{\tt#1}}
 
-%% 
+%%
 
 \newif\ifauthorundefined
 \authorundefinedtrue
@@ -239,7 +247,7 @@
 \DeclareOption{letterpaper}{\paperformat{letterpaper}\afourpaperfalse\custompaperfalse}
 \DeclareOption{a4paper}{\paperformat{a4paper}\afourpapertrue\letterpaperfalse\custompaperfalse}
 \DeclareOption{custompaper}{\paperformat{letterpaper}\afourpaperfalse\letterpaperfalse\custompapertrue}
-
+\ExecuteOptions{letterpaper}
 
 \newlength{\@LMarginSize}
 \newlength{\@RMarginSize}
@@ -362,10 +370,6 @@
 % all sorts of author names.
 %\RequirePackage[utf8]{inputenc}
 
-% All \urls will be hyperlinked and will deal properly with special characters
-% XXX: url is included by hyperref
-%\RequirePackage{url}
-
 % To ensure the footnotes are always at the bottom.
 % IMPORTANT: footmisc should precede hyperref for the footnotes to hyperlink
 %            correctly to their pages where they are at instead of always at
@@ -373,10 +377,12 @@
 %            Uwe Pfeiffer.
 \RequirePackage[bottom]{footmisc}
 
-%% TOC/thumbnail LHS preview in the PDFs as well as active URLs and other cross-refs
-%% Newer versions of hyperref declare a4paper or letterpaper as obsolete and issue warnings
-%%\RequirePackage[\@PaperFormat,pdfcreator=easychair.cls-2.0]{hyperref}
-%\RequirePackage[linktocpage,pdfcreator=easychair.cls-2.0-Beta-3]{hyperref}
+% TOC/thumbnail LHS preview in the PDFs as well as active URLs and other cross-refs
+% Newer versions of hyperref declare a4paper or letterpaper as obsolete and issue warnings
+\definecolor{linkcolor}{RGB}{170,0,0} % aa0000
+\definecolor{citecolor}{RGB}{44,160,46} % 2ca02d
+\definecolor{urlcolor}{RGB}{0,51,153} % 003399
+\RequirePackage[linktocpage,pdfcreator=easychair.cls-3.4,colorlinks=True,urlcolor=urlcolor,citecolor=citecolor,linkcolor=linkcolor]{hyperref}
 
 % Traditional graphics processing
 \RequirePackage{graphicx}
@@ -401,7 +407,7 @@
 \fi
 
 % Pick "Helvetica" as a "Sans-Serif" font
-\RequirePackage[scaled=.85]{helvet}
+%\RequirePackage[scaled=.85]{helvet}
 
 % For algorithm and source code listings
 \RequirePackage{listings}
@@ -513,9 +519,9 @@
 			\ifnum #2>1 \gdef\@EasyEds{eds.}\fi%
 			\ifnum #4>0 \gdef\@EasyVolume{; Volume #4}\fi%
 			\ifnum #5>0 \gdef\@EasyIssue{, issue: #5} \fi%
-	%		\footnotetext[0]{\sf \@EasyEdsNames (\@EasyEds); \@EasyEvent\@EasyVolume\@EasyIssue, pp. #6-\pageref{LastPage}}%
-	%		\def\@EasyVolumeInfo{\footnotesize{\sf\@EasyEdsNames~(\@EasyEds); \@EasyEvent\@EasyVolume\@EasyIssue, pp. \@EasyFirstPage--\pageref{LastPage}}}%
-			\def\@EasyVolumeInfo{\@EasyFontStyle\@EasyEdsNames~(\@EasyEds); \@EasyEvent\@EasyVolume\@EasyIssue, pp. \@EasyFirstPage--\pageref{LastPage}}%
+	%		\footnotetext[0]{\sf \@EasyEdsNames (\@EasyEds); \@EasyEvent\@EasyVolume\@EasyIssue, pp. #6-\pageref*{LastPage}}%
+	%		\def\@EasyVolumeInfo{\footnotesize{\sf\@EasyEdsNames~(\@EasyEds); \@EasyEvent\@EasyVolume\@EasyIssue, pp. \@EasyFirstPage--\pageref*{LastPage}}}%
+			\def\@EasyVolumeInfo{\@EasyFontStyle\@EasyEdsNames~(\@EasyEds); \@EasyEvent\@EasyVolume\@EasyIssue, pp. \@EasyFirstPage--\pageref*{LastPage}}%
 			%\def\@makefntext##1{\noindent\@makefnmark##1}%
 			\setcounter{page}{\@EasyFirstPage}
 			\volumeundefinedfalse
@@ -527,20 +533,6 @@
 
 \def\@EventInfo{}
 \def\@VolumeInfo{}
-
-\newif\ifvolumeecpsundefined
-\volumeecpsundefinedtrue
-
-\newcommand{\volumeinfoECPS}[2]{%
-	\ifvolumeecpsundefined
-		\def\@EventInfo{#1}%
-		\def\@VolumeInfo{#2}%
-		\volumeecpsundefinedfalse
-	\else
-		{\PackageWarning{easychair}{Ignoring another definition of volumeinfoECPS}}
-	\fi
-}
-
 
 %
 % Allow for more space to place floats.
@@ -579,16 +571,6 @@
 %\fi
 
 \fancyfoot{}
-%\ifdebug
-%	\fancyfoot[CO,CE]{\underline{\thepage}}
-%	\renewcommand{\headrulewidth}{1pt}
-%	\renewcommand{\footrulewidth}{1pt}
-%\else
-%	\fancyfoot[CO,CE]{\thepage}
-%	\fancyfoot[LO]{{\footnotesize{\sf\@EventInfo}}}
-%	\fancyfoot[LE]{{\footnotesize{\sf\@VolumeInfo}}}
-%	\fancyfoot[LO]{{\@EasyFontStyle\@EventInfo}}
-%	\fancyfoot[LE]{{\@EasyFontStyle\@VolumeInfo}}
 \ifodd\c@page
 	\fancyfoot[LO]{{\@EasyFontStyle\@VolumeInfo}}
 	\fancyfoot[RE]{{\@EasyFontStyle\@EventInfo}}
@@ -596,17 +578,6 @@
 	\fancyfoot[RE]{{\@EasyFontStyle\@VolumeInfo}}
 	\fancyfoot[LO]{{\@EasyFontStyle\@EventInfo}}
 \fi
-%	\fancyfoot[LO,LE]
-%	{
-%\volumeinfoECPS
-%	{A. Editor, B. Editor}         % editors
-%	{2}                                 % number of editors
-%	{EVENT, Month YEAR}      % event
-%	{1}                                 % volume
-%	}
-%	\fancyfoot[RO,RE]{{\@EasyFontStyle\thepage}}
-%	\fancyfoot[RO]{{\@EasyFontStyle\thepage}}
-%	\fancyfoot[LE]{{\@EasyFontStyle\thepage}}
 \ifodd\c@page
 	\fancyfoot[RO]{{\normalsize\thepage}}
 	\fancyfoot[LE]{{\normalsize\thepage}}
@@ -625,17 +596,17 @@
 \fancypagestyle{plain}{%
 \fancyhf{} % clear all header and footer fields
 \ifodd\c@page
-	\fancyfoot[L]{\@EasyVolumeInfo}%
-	\fancyfoot[R]{{\normalsize\thepage}} % except the center
+	\fancyfoot[L]{\@EasyVolumeInfo{}}%
+	\fancyfoot[R]{}
 \else
 	\fancyfoot[R]{\@EasyVolumeInfo}%
-	\fancyfoot[L]{{\normalsize\thepage}} % except the center
+	\fancyfoot[L]{}
 \fi
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}}
 
 \def\@maketitle{%
-  %% Code added to use llncs style author list 
+  %% Code added to use llncs style author list
 \def\andname{and}
 \def\lastandname{\unskip, and}
   \def\lastand{\ifnum\value{@inst}=2\relax
@@ -649,7 +620,7 @@
           \else
              \unskip,
              \fi}%
-   %% 
+   %%
   \newpage
 	\null
   % Facelift a bit the title and make it bold, per Geoff
@@ -674,143 +645,79 @@
                \@author\vskip.35cm}}
                {\small\institutename}
 	\end{center}%
-	%\volumeinfoECPS{\@EventInfo}{\@VolumeInfo}
-	%\titlerunning{EMPTY}%
-	%\authorrunning{EMPTY}%
-	%\authorrunning{\@authorRunning}%
-	%\renewcommand{\titlerunning}[1]{}
-	%\renewcommand{\authorrunning}[1]{}
-	%%\renewcommand{\volumeinfoECPS}[2]{}%
-	%%\renewcommand{\volumeinfo}[6]{}
-	%\gdef\@authorRunning{Gooo\@authorRunning}%
-	%\gdef\@EasyVolumeInfo{Foo\@authorRunning}%
-	%\gdef\@EventInfo{}
-	%\gdef\@VolumeInfo{}
-%\volumeinfo
-	%{NNNNOT A. Voronkov}         % editors
-	%{1}                                 % number of editors
-	%{NYO-YO}      % event
-	%{44}                                 % volume
-	%{1}                                 % issue
-	%{45}                                 % starting page number
-%\volumeinfoECPS
-	%{NNNNOT Super EasyChair Workshop Proceedings}
-	%{NNNNOT ECPS vol. 43}
-	\par
-	%\relax
 }
 
-\ifprocediafinal
+\ifEPiCfinal
 \definecolor{volume}{RGB}{0,112,144}
-\def\procediaSeries{Procedia Computer Science}
-\def\procediaVolume{XXX}
-\def\procediaYear{2014}
-\def\procediaPages{Pages 19--27}
-\def\procediaConference{99th International Conference on Topics of Superb Significance (CATSS)}
-\def\elsevierLogo{elsevier_24mm.jpg}
-\def\procediaLogo{computer_science.jpg}
+\def\EPiCSeries{EPiC Series in Computer Science}
+\def\EPiCVolume{XXX}
+\def\EPiCYear{2017}
+\def\EPiCPages{Pages 19--27}
+\def\EPiCConference{99th International Conference on Topics of Superb Significance (CATSS)}
+\def\ChairLogo{logo_chair.png}
+\def\EPiCLogo{logo_epic.png}
 \fi
 
 % ------------------------------------------------
-% Change the maketitle command in Procedia
+% Change the maketitle command in EPiC
 \let\oldmaketitle=\@maketitle
 % ------------------------------------------------
 \def\@maketitle{%
-\ifprocediafinal
-\vspace*{-36pt}\noindent \hrulefill\\*[-5pt]
-\noindent
-\begin{tabular}{lcr}%
- \vtop{\null\hbox{\includegraphics[height=73pt]{\elsevierLogo}}} &
-\vtop{\null\hbox{%
-\begin{minipage}[t]{261pt}\sf%
-\begin{center}\vspace*{2pt}%
-  {\Large \procediaSeries} \\[9pt]
-  {\color{volume}Volume \procediaVolume}, \procediaYear, \procediaPages \\[15pt]
-  \procediaConference
-\end{center}
-\end{minipage}}} &
- \vtop{\null\hbox{\includegraphics[height=73pt]{\procediaLogo}}}
- \end{tabular}
- 
-\vspace*{5pt}\noindent\hrulefill
- 
+\ifEPiCfinal
+
+%\vspace*{-10mm}\par
+\definecolor{headerframe}{rgb}{0.473,0.676,0.656} % 79ada8
+\definecolor{headerback}{rgb}{0.953125,0.95703125,0.9609375} % f4f5f6
+
+\begin{tcolorbox}[
+  enhanced,center,width=\linewidth-2cm,
+  underlay={
+    \node[inner sep=0pt,outer sep=0pt,right] at ([xshift=-1cm]frame.west)
+      {\includegraphics[height=74.5pt]{\ChairLogo}};
+    \node[inner sep=0pt,outer sep=0pt,left] at ([xshift=1cm]frame.east)
+      {\includegraphics[height=73pt]{\EPiCLogo}};
+  },
+  before skip=0pt,% <--- before box
+  after skip=6pt,%  <--- after box
+  left=71.54pt-1cm+4mm,
+  right=56.22423pt-1cm+4mm,
+  sharp corners,text fill,
+  colback=headerback,colframe=headerframe,
+  height=73pt,toprule=0.5pt,bottomrule=0.5pt,leftrule=0pt,rightrule=0pt,
+  halign=center,valign=center,boxsep=0pt,
+  top=2mm,%     space to top border
+  bottom=2mm,%  space to bottom border
+  ]%
+{\Large \EPiCSeries}\par\vfill%
+{\color{volume}Volume \EPiCVolume, \EPiCYear, \EPiCPages}\par\vfill%
+\EPiCConference
+\end{tcolorbox}
+
 \par\ \vspace*{12pt}\par
 {\let\newpage\relax\oldmaketitle}%
-\else \ifprocedia
+\else \ifEPiC
 \definecolor{grayheader}{RGB}{112,112,112}%
-{\color{grayheader}\vspace*{-36pt}\noindent \hrulefill\\
+{\color{grayheader}\vspace*{-23pt}\noindent \hrulefill\\
 \noindent\centering
-\raisebox{0pt}[47pt][47pt]{This space is reserved for the Procedia header, do not use it}%
+\raisebox{0pt}[36.5pt][36.5pt]{This space is reserved for the EPiC Series header, do not use it}%
 
 \noindent\hrulefill}%
 \\
 
 {\let\newpage\relax\oldmaketitle}%
-\else \ifprocediaempty
+\else \ifEPiCempty
 \raisebox{0pt}[47pt][47pt]{~}
 \\
 
 {\let\newpage\relax\oldmaketitle}%
+
+% otherwise the old maketitle
+
 \else
 \oldmaketitle
 \fi\fi\fi
 }
 % ------------------------------------------------
-
-% ------------------------------------------------
-% change the abstract command in Procedia
-\let\old@abstract=\abstract
-\let\old@endabstract=\endabstract
-% ------------------------------------------------
-\def\abstract{%
-\ifprocedia
-\noindent\hrulefill\par
-\vspace*{5pt}\noindent\textbf{Abstract}\par\noindent\ignorespaces
-\else \ifprocediafinal
-\noindent\hrulefill\par
-\vspace*{5pt}\noindent\textbf{Abstract}\par\noindent\ignorespaces
-\else \ifprocediaempty
-\noindent\hrulefill\par
-\vspace*{5pt}\noindent\textbf{Abstract}\par\noindent\ignorespaces
-\else
-\old@abstract
-\fi\fi\fi}
-\def\endabstract{%
-\ifprocedia
-\vspace{5pt}\par\noindent
-{\small\textit{Keywords:} \@keywords}
-\par\vspace*{-6pt}\noindent\hrulefill
-\else \ifprocediafinal
-\vspace{5pt}\par\noindent
-{\small\textit{Keywords:} \@keywords}
-\par\vspace*{-6pt}\noindent\hrulefill
-\old@endabstract
-\else \ifprocediaempty
-\vspace{5pt}\par\noindent
-{\small\textit{Keywords:} \@keywords}
-\par\vspace*{-6pt}\noindent\hrulefill
-\old@endabstract
-\fi\fi\fi}
-% ------------------------------------------------
-
-% ------------------------------------------------
-% keywords command in Procedia
-\ifprocedia
-\def\@keywords{}
-\def\keywords#1{\gdef\@keywords{#1}}
-\else \ifprocediafinal
-\def\@keywords{}
-\def\keywords#1{\gdef\@keywords{#1}}
-\else \ifprocediaempty
-\def\@keywords{}
-\def\keywords#1{\gdef\@keywords{#1}}
-\fi\fi\fi
-% ------------------------------------------------
-
-% TOC/thumbnail LHS preview in the PDFs as well as active URLs and other cross-refs
-% Newer versions of hyperref declare a4paper or letterpaper as obsolete and issue warnings
-\RequirePackage[linktocpage,pdfcreator=easychair.cls-3.4]{hyperref}
-
 
 % Tighten up bibliography
 \let\oldthebibliography=\thebibliography
