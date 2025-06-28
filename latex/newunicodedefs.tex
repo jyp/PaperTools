@@ -20,9 +20,8 @@
     \put(7,34){\line(1,0){25}} \put(45,34){\line(1,0){25}}
     \put(7,14){\line(1,0){25}} \put(45,14){\line(1,0){25}}
   \end{picture}}}
+\newcommand{\bidirmultimap}{\mathrel{\ooalign{$\mkern6mu\multimap$\cr$\reflectbox{\(\multimap\)}$\cr}}}
 
-% \newunicodechar{ϕ}{\ensuremath{\mathnormal{\varphi}}} % 
-% \newunicodechar{⟷} {\ensuremath{\leftrightarrow}}
 \newunicodechar{ }{\,}
 \newunicodechar{¬}{\ensuremath{\neg}} % 
 \newunicodechar{²}{^2}
@@ -69,13 +68,14 @@
 \newunicodechar{χ}{\ensuremath{\mathnormal{\chi}}} % 
 \newunicodechar{ψ}{\ensuremath{\mathnormal{\psi}}} % 
 \newunicodechar{ω}{\ensuremath{\mathnormal{\omega}}} %  
-\newunicodechar{ϕ}{\ensuremath{\mathnormal{\phi}}} % 
+\newunicodechar{ϕ}{\ensuremath{\mathnormal{\phi}}} % \varphi
 \newunicodechar{ϵ}{\ensuremath{\mathnormal{\epsilon}}} % 
 \newunicodechar{ᵀ}{\ensuremath{^T}}
 \newunicodechar{ᵏ}{^k}
 \newunicodechar{ᵐ}{^m}
 \newunicodechar{ᵢ}{\ensuremath{_i}} % 
 \newunicodechar{ᵣ}{_r}
+\newunicodechar{•}{\ensuremath{\cdot}} %
 \newunicodechar{ᶿ}{^\theta}
 \newunicodechar{ }{\quad}
 \newunicodechar{†}{\dagger}
@@ -115,8 +115,9 @@
 \newunicodechar{↔}{\ensuremath{\leftrightarrow}} % 
 \newunicodechar{↖}{\nwarrow} %
 \newunicodechar{↗}{\nearrow} %
-\newunicodechar{↝}{\ensuremath{\leadsto}}
+\newunicodechar{↝}{\ensuremath{\leadsto}} % \rightsquigarrow
 \newunicodechar{↦}{\ensuremath{\mapsto}}
+\newunicodechar{↭}{\ensuremath{\leftrightsquigarrow}} %
 \newunicodechar{⇆}{\ensuremath{\leftrightarrows}} % 
 \newunicodechar{⇐}{\ensuremath{\Leftarrow}} % 
 \newunicodechar{⇒}{\ensuremath{\Rightarrow}} % 
@@ -148,13 +149,16 @@
 \newunicodechar{≃}{\ensuremath{\simeq}} % 
 \newunicodechar{≅}{\ensuremath{\cong}} % 
 \newunicodechar{≈}{\ensuremath{\approx}} % 
+\newunicodechar{≔}{:=} %
 \newunicodechar{≜}{\ensuremath{\stackrel{\scriptscriptstyle {\triangle}}{=}}} % \newunicodechar{≜}{\triangleq}
 \newunicodechar{≝}{\ensuremath{\stackrel{\scriptscriptstyle {\text{def}}}{=}}}
 \newunicodechar{≟}{\ensuremath{\stackrel {_\text{\textbf{?}}}{\text{\textbf{=}}\negthickspace\negthickspace\text{\textbf{=}}}}} % or {\ensuremath{\stackrel{\scriptscriptstyle ?}{=}}}
 \newunicodechar{≠}{\ensuremath{\neq}}% 
 \newunicodechar{≡}{\ensuremath{\equiv}}% 
-\newunicodechar{≤}{\ensuremath{\le}} % 
-\newunicodechar{≥}{\ensuremath{\ge}} % 
+\newunicodechar{≤}{\ensuremath{\leq}} %
+\newunicodechar{≥}{\ensuremath{\geq}} %
+\newunicodechar{≺}{\ensuremath{\prec}}
+\newunicodechar{≼}{\ensuremath{\preceq}}
 \newunicodechar{⊂}{\ensuremath{\subset}} % 
 \newunicodechar{⊃}{\ensuremath{\supset}} %  
 \newunicodechar{⊆}{\ensuremath{\subseteq}} %  
@@ -168,11 +172,16 @@
 \newunicodechar{⊗}{\ensuremath{\otimes}} % 
 \newunicodechar{⊙}{\ensuremath{\odot}} % 
 \newunicodechar{⊛}{\ensuremath{\circledast}}
+\newunicodechar{⊞}{\ensuremath{\boxplus}} %
+\newunicodechar{⊟}{\ensuremath{\boxminus}} %
+\newunicodechar{⊡}{\ensuremath{\boxdot}} %
+\newunicodechar{⊣}{\ensuremath{\dashv}}
 \newunicodechar{⊢}{\ensuremath{\vdash}} % 
 \newunicodechar{⊤}{\ensuremath{\top}}
 \newunicodechar{⊥}{\ensuremath{\bot}} % bottom
 \newunicodechar{⊧}{\models} % 
-\newunicodechar{⊨}{\models} % 
+\newunicodechar{⊧}{\vDash} %
+\newunicodechar{⊨}{\vDash} % {\models}
 \newunicodechar{⊩}{\Vdash}
 \newunicodechar{⊬}{\not \vdash}
 \newunicodechar{⊸}{\ensuremath{\multimap}} % 
@@ -197,6 +206,7 @@
 \newunicodechar{◇}{\ensuremath{\diamond}} % 
 \newunicodechar{◽}{\ensuremath{\varsquare}}
 \newunicodechar{★}{\ensuremath{\star}}   %
+\newunicodechar{♢}{\ensuremath{\diamondsuit}} %
 \newunicodechar{♭}{\ensuremath{\flat}} % 
 \newunicodechar{♯}{\ensuremath{\sharp}} % 
 \newunicodechar{⛋}{\ensuremath{\varsqdiamond}} % 
@@ -211,10 +221,13 @@
 \newunicodechar{⟹}{\ensuremath{\Longrightarrow}} % 
 \newunicodechar{⦇}{\rlparenthesis}
 \newunicodechar{⦈}{\llparenthesis}
-\newunicodechar{⪅}{\ensuremath{\lessapprox}}
-\newunicodechar{⪆}{\ensuremath{\gtrapprox}}
+\newunicodechar{⦃}{\ensuremath{\llbrace}} %
+\newunicodechar{⦄}{\ensuremath{\rrbrace}} %
+\newunicodechar{⧟}{\ensuremath{\bidirmultimap}} %
 \newunicodechar{⨁}{\bigoplus} %
 \newunicodechar{⨂}{\bigotimes} %
+\newunicodechar{⪅}{\ensuremath{\lessapprox}}
+\newunicodechar{⪆}{\ensuremath{\gtrapprox}}
 \newunicodechar{ⱼ}{\ensuremath{_j}} % 
 \newunicodechar{𝒟}{\ensuremath{\mathcal{D}}} % 
 \newunicodechar{𝒢}{\ensuremath{\mathcal{G}}}
